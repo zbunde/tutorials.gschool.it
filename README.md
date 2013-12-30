@@ -1,3 +1,12 @@
+# tutorials.gschool.it
+This is the home of all online tutorials for gSchool.
+
+## Tech details
+
+* Ruby 2.1.0
+* Middleman
+* Deployed to Heroku using a [custom buildpack](https://github.com/Galvanize-IT/heroku-buildpack-middleman) that will compile static site on deploy.
+
 # Middleman on Heroku
 ### precompiled and served statically
 
