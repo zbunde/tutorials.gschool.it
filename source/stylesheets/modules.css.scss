@@ -1,0 +1,13 @@
+.header-logo {
+  display: block;
+}
+
+.header-logo-image {
+  width: 100%;
+}
+
+@media all and (min-width: 30em) {
+  .header-logo {
+    float: left;
+  }
+}

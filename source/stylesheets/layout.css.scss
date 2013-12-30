@@ -1,0 +1,15 @@
+@import 'variables.css.scss';
+
+body {
+  max-width: 1210px;
+  margin: 0px auto;
+  padding: 0 1em;
+}
+
+header {
+  @extend .clearfix;
+}
+
+footer {
+  padding: 1.25em 0;
+}
