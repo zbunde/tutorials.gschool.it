@@ -4,9 +4,8 @@
  *= require variables
  *= require base
  *= require layout
- *= require modules
+ *= require_tree ./modules
  *= require state
- *= require terminal
  */
 
 /* The CSS in this application adheres to the ideas of SMACSS (http://smacss.com/) */
