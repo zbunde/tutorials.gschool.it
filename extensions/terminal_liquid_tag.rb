@@ -26,7 +26,7 @@ class TerminalTag < Liquid::Block
     table = "<table><tr>"
     table += "<td class='gutter'><pre class='line-numbers'>#{gutters.join("\n")}</pre></td>"
     table += "<td class='code'><pre><code>#{lines_of_code.join("")}</code></pre></td>"
-    table += "</tr></table>"
+    table + "</tr></table>"
   end
 
   def gutter(line)
@@ -41,7 +41,7 @@ class TerminalTag < Liquid::Block
     else
       line_class = "output"
     end
-    "<span class='line #{line_class}'>#{line}</span>"
+    "<span class='line #{line_class}'>#{line.strip}</span>"
   end
 
   def command_character
