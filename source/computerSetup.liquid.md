@@ -2,7 +2,7 @@
 
 You will be spending a lot of time in front of a computer using many different, unfamiliar tools during your time at gSchool. This tutorial will guide you through installing the basic tools we will use. In addition to simply installing the tools, you should take a little time reading each website to understand where each tool fits into your toolbox (also called the toolchain) as a developer. This will help you long term as you form a mental model of the world of software development.
 
-## Story - Create directory that will house all of your classwork.
+## <a name="workDirectory"></a>Story - Create directory that will house all of your classwork.
 
 As developers, we collect a lot of source code and artifacts for our various projects. Knowing where to easily find everything is a good skill to have, just like when you go looking for that pair of shoes. If you know they are in a specific closet and that closet is clean, they are easy to find. If you have no idea which closet they are in and each closet is messy, they will take a long time to find. 
 
@@ -26,7 +26,7 @@ drwxr-xr-x+  5 user  staff   170 Dec 20 15:36 Public
 drwxr-xr-x   2 user  staff    68 Dec 31 09:03 gSchoolWork
 {% endterminal %}
 
-## Story - Install Homebrew
+## <a name="homebrew">Story - Install Homebrew
 
 [Homebrew](http://brew.sh/) is a tool that will allow you to easily install development tools to your Mac from source code. We will be using it throughout the class to install various tools as we need them.
 
@@ -103,7 +103,7 @@ $ brew doctor
 Your system is ready to brew.
 {% endterminal %}
 
-## Story - Install RVM
+## <a name="rvm">Story - Install RVM
 
 [RVM](http://rvm.io/) (Ruby Version Manager) is a program that allows you to easily install and manage Ruby versions and installed Ruby libraries, called [Gems](http://en.wikipedia.org/wiki/RubyGems). These libraries are managed via a site called [RubyGems.org](http://rubygems.org/).
 
@@ -132,7 +132,7 @@ system:
 lots of other information ...
 {% endterminal %}
 
-## Story - Install Ruby 2.1
+## <a name="ruby21">Story - Install Ruby 2.1
 
 OS X Mavericks, the [operating system](http://en.wikipedia.org/wiki/Operating_system) for you Mac, comes with a version of Ruby installed but it is not the latest and greatest. We will use RVM to install the latest version of Ruby, 2.1. If prompted for a password, use the password you use to unlock your computer. While you are waiting for Ruby to compile, read about Ruby:
 
@@ -184,7 +184,7 @@ $ ruby --version
 ruby 2.1.0p0 (2013-12-25 revision 44422) [x86_64-darwin12.0]
 {% endterminal %}
 
-## Story - Install Chrome browser
+## <a name="chrome">Story - Install Chrome browser
 
 Chrome will be our primary development browser because of the great built in [development tools](https://developers.google.com/chrome-developer-tools/). If you typically use another browser, please get familiar with Chrome.
 
@@ -192,7 +192,7 @@ To confirm successful installation, open up the Chrome browser from the Applicat
 
 
 
-## Story - Install ScreenHero
+## <a name="screenhero">Story - Install ScreenHero
 
 We will be doing a lot of pair programming throughout the course. We will start out using [ScreenHero](http://screenhero.com/) to support pair programming.
 
@@ -206,7 +206,7 @@ Then add the contact:
 
 ![Add ScreenHero Contact](/images/computerSetup/addContact.png)
 
-## Story - Install GitHub git GUI client
+## <a name="githubGui">Story - Install GitHub git GUI client
 
 We will be using [Git](http://git-scm.com/) as our [version control](http://en.wikipedia.org/wiki/Revision_control) software. In order to easily interact with Git early in the class, we will use a [GUI](http://en.wikipedia.org/wiki/Graphical_user_interface) client from GitHub.
 
@@ -240,7 +240,7 @@ When the main window appears, you are all done.
 
 ![Git Setup](/images/computerSetup/gitSetupDone.png)
 
-## Story - Generate an SSH key
+## <a name="sshKey">Story - Generate an SSH key
 
 There are many ways to prove your identity to a remote website. The predominant way is by using a username/password combination. Another way it to use something called an [SSH Key](https://wiki.archlinux.org/index.php/SSH_Keys). We will use SSH keys when communicating with various servers on the Internet.
 
@@ -254,7 +254,7 @@ $ ssh-add ~/.ssh/id_rsa
 
 If you already have an SSH key as identified by step 1, please make sure that you add a password to the key using [this guide](https://help.github.com/articles/working-with-ssh-key-passphrases) before continuing to step 3.
 
-## Story - Create Heroku account
+## <a name="heroku">Story - Create Heroku account
 
 We will be using [Heroku](http://heroku.com) to quickly and easily deploy applications to the Web. You should sign up for an account on their site.
 
