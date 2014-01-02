@@ -34,7 +34,7 @@ class TerminalTag < Liquid::Block
     else
       line_class = "output"
     end
-    "<span class='#{line_class}'>#{line.strip}</span>"
+    "<pre class='#{line_class}'>#{line.strip}</pre>"
   end
 
   def command_character
