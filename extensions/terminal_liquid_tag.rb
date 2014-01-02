@@ -9,29 +9,22 @@ class TerminalTag < Liquid::Block
 
     %{<div class="window">
           <nav class="control-window">
-            <a href="#finder" class="close" data-rel="close">close</a>
+            <a href="#" class="close" data-rel="close">close</a>
             <a href="#" class="minimize">minimize</a>
             <a href="#" class="deactivate">deactivate</a>
           </nav>
           <h1 class="titleInside">Terminal</h1>
-          <div class="container"><div class="terminal">#{promptize(output)}</div></div>
+          <div class="terminal">#{promptize(output)}</div>
         </div>}
   end
 
   def promptize(content)
-    content = content.strip
-    gutters = content.lines.map { |line| gutter(line) }
-    lines_of_code = content.lines.map { |line| line_of_code(line) }
-
-    table = "<table><tr>"
-    table += "<td class='gutter'><pre class='line-numbers'>#{gutters.join("\n")}</pre></td>"
-    table += "<td class='code'><pre><code>#{lines_of_code.join("")}</code></pre></td>"
-    table + "</tr></table>"
+    content.strip.lines.map { |line| "<div>#{gutter(line)}#{line_of_code(line)}</div>" }.join("\n")
   end
 
   def gutter(line)
     gutter_value = line.start_with?(command_character) ? command_character : "&nbsp;"
-    "<span class='line-number'>#{gutter_value}</span>"
+    "<span class='gutter'>#{gutter_value}</span>"
   end
 
   def line_of_code(line)
@@ -41,7 +34,7 @@ class TerminalTag < Liquid::Block
     else
       line_class = "output"
     end
-    "<span class='line #{line_class}'>#{line.strip}</span>"
+    "<span class='#{line_class}'>#{line.strip}</span>"
   end
 
   def command_character

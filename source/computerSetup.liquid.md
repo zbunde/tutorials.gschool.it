@@ -13,7 +13,7 @@ Use [this tutorial](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-c
 When you are done, you can confirm that you did it properly by typing `ls -l ~` at the command line and seeing the gSchoolWork directory listed. If you see the directory, you can mark the story as completed in Tracker.
 
 {% terminal %}
-$ls -l ~
+$ ls -l ~
 total 0
 drwx------+  4 user  staff   136 Dec 24 10:50 Desktop
 drwx------+  3 user  staff   102 Dec 20 15:36 Documents
