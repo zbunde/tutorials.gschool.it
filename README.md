@@ -7,6 +7,10 @@ This is based off of [https://github.com/indirect/middleman-heroku-static-app](h
 * Middleman
 * Deployed to [Heroku](http://tutorials-gschool-production.herokuapp.com/).
 
+To run locally:
+
+    middleman server
+
 ## Gotchas
 
 Always make the markdown extension (.md) the last extension on the file name.
