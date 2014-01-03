@@ -89,3 +89,5 @@ end
 ::I18n.config.enforce_available_locales = false
 
 Dir[File.join(File.dirname(__FILE__), 'extensions', '**', '*.rb')].each {|file| require file }
+
+helpers TutorialListHelpers
