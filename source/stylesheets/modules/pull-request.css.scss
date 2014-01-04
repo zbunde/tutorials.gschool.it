@@ -1,0 +1,8 @@
+@import 'variables.css.scss';
+
+.pull-request-info {
+  border-radius: $border-radius;
+  padding: 1em;
+  border: 1px solid $dark;
+  background-color: lighten($grey, 30%);
+}
