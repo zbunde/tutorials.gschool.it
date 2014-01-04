@@ -14,7 +14,8 @@
 %body
   %header
     .header-logo
-      = image_tag(image_path('gschool_logo-large.png'), class: 'header-logo-image')
+      = link_to "/" do
+        = image_tag(image_path('gschool_logo-large.png'), class: 'header-logo-image')
   %main
     .pull-request-info
       These tutorials are open source. If you find an error or have a clarification, please submit a
