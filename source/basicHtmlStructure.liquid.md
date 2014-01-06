@@ -144,16 +144,34 @@ up being wrong, they would still be green but the end user wouldn't be getting w
 
 ![Title in browser](/images/basicHtmlStructure/titleInBrowser.png)
 
-Now that you have confirmed that everything is correct as per the story and the tests, you can make a commit using the GitHub Gui. First look through each file to confirm that the changes that have been made
-are the ones that you want to commit. In order to see the changes for each file, click on the file on the left hand side. The changes will show up in the right hand side.
+Now that you have confirmed that everything is correct as per the story and the tests, you can make a commit using the GitHub Gui or the command line.
+
+First look through each file to confirm that the changes that have been made
+are the ones that you want to commit. For the Gui:
 
 ![Test Change](/images/basicHtmlStructure/testChange.png)
 
 ![Index page change](/images/basicHtmlStructure/indexPageChange.png)
 
+For the command line, you will use [git diff](http://www.gitguys.com/topics/git-diff/){:target="_blank"}:
+
+{% terminal %}
+$ git diff test/landing_page_test.rb
+{% endterminal %}
+
+{% terminal %}
+git diff public/index.html
+{% endterminal %}
+
 You can then commit your changes by filling in a good commit summary and extended description and pressing the commit button.
 
 ![Commit changes](/images/basicHtmlStructure/commitChanges.png)
+
+Or using the command line you need to use a [git add and a git commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository){:target="_blank"}:
+{% terminal %}
+$ git add public/index.html test/landing_page_test.rb
+$ git commit -m "Some message here"
+{% endterminal %}
 
 Confirm that your commit is OK by checking the history tab.
 
@@ -161,7 +179,19 @@ Confirm that your commit is OK by checking the history tab.
 
 You can now push your change up to GitHub so that the rest of your team can see the change and make sure their code works well with it. This is what we call [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration){:target="_blank"}.
 
+You can either use the GitHub GUI:
+
 ![Push to Github](/images/basicHtmlStructure/pushToGithub.png)
+
+Or you can use the command line:
+
+{% terminal %}
+$ git push origin master
+Username for 'https://github.com':
+Password for 'https://mike.gehard@gmail.com@github.com':
+< omitted text >
+{% endterminal %}
+
 
 Now that everything has been integrated, you can mark the Tracker story as completed. This tells the team that you have completed work on the story.
 
