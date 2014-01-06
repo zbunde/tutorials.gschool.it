@@ -150,6 +150,23 @@ Your commit should be at the top of the list.
 
 ![Commit](/images/staticSiteDeploy/commitDetails.png)
 
+Now that you have confirmed that your changes are indeed working, you should push your changes back up to GitHub.
+You can either use the Gui with the sync button or us the command line.
+
+{% terminal %}
+$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:yourUsername/restaurant_site.git
+   7181a86..1472f4f  master -> master
+{% endterminal %}
+
+This step will
+become more important as your team grows past one person so your team mates can [integrate your changes into their work](http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows){:target="_blank"}.
+
 You are now ready to share you change with the world by deploying your code to Heroku just like you did above.
 
 {% terminal %}
@@ -176,20 +193,6 @@ Opening protected-caverns-4965... done
 {% endterminal %}
 
 ![After Changes](/images/staticSiteDeploy/afterChangesBrowser.png)
-
-Now that you have confirmed that your changes are indeed working, you should push your changes back up to GitHub. This step will
-become more important as your team grows past one person so your team mates can [integrate your changes into their work](http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows){:target="_blank"}.
-
-{% terminal %}
-$ git push origin master
-Counting objects: 6, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 321 bytes | 0 bytes/s, done.
-Total 3 (delta 2), reused 0 (delta 0)
-To git@github.com:yourUsername/restaurant_site.git
-   7181a86..1472f4f  master -> master
-{% endterminal %}
 
 Congratulations, you have successfully deployed your first web site change to Heroku and have pushed them up to GitHub.
 Go and grab an instructor and have them accept any stories that are awaiting acceptance.
