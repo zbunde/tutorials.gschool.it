@@ -118,8 +118,6 @@ Fabulous run in 0.012950s, 617.7606 runs/s, 308.8803 assertions/s.
 
 You should also check in the browser to make sure it all looks good.
 
-![Showing dynamic copyright](/images/dynamicWebPage/showingDynamicCopyright.png)
-
 Now it is ready to commit and deploy to production. First you should confirm your changes in the test file.
 
 ![Test Change](/images/dynamicWebPage/testChange.png)
@@ -168,8 +166,6 @@ You can then open the stating environment and make sure everything looks good.
 $heroku open
 Opening fast-falls-6618... done
 {% endterminal %}
-
-![Checking staging](/images/dynamicWebPage/checkingStaging.png)
 
 Now that you have confirmed that everything looks good in staging, you can mark the Tracker story as delivered. This will alert the product owner, in this case your instructor playing the
 role of the restaurant owner, that they can make sure everything looks good. They will either accept or reject the story depending if it meets their needs.
