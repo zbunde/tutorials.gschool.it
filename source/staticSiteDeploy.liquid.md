@@ -12,7 +12,7 @@
 * Using local development environment
 * Deploying application to Heroku
 * Committing changes to local Git repository
-* Sharing changes with team mates via GitHub
+* Sharing changes with teammates via remote GitHub repository
 
 This tutorial will lead you through the steps of obtaining [source code](http://en.wikipedia.org/wiki/Source_code){:target="_blank"} for a [static web site](http://en.wikipedia.org/wiki/Static_web_page){:target="_blank"} from a remote [Git](http://git-scm.com/book/en/Getting-Started){:target="_blank"} repository by [cloning that repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}, making and confirming changes to that site and deploying that application to the Internet via a cloud based hosting platform for [web applications](http://en.wikipedia.org/wiki/Web_application){:target="_blank"} called [Heroku](https://www.heroku.com/){:target="_blank"}.
 
@@ -208,4 +208,5 @@ prepared with any questions you have:
 * [http://gitimmersion.com/](http://try.github.io/){:target="_blank"}
 
 As you take your Git learning deeper, you can check out the [free online book](http://git-scm.com/book){:target="_blank"} for
-more information about Git and it's inner workings.
+more information about Git and it's inner workings. The [Git Basics](http://git-scm.com/book/en/Git-Basics){:target="_blank"} section will cover a lot of what you did
+with the Gui.
