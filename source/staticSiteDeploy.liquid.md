@@ -7,6 +7,7 @@
 * Incremental Deployment
 
 ## Tech skills learned
+* Forking a repository on GitHub
 * Cloning repository from GitHub
 * Using local development environment
 * Deploying application to Heroku
@@ -17,24 +18,24 @@ This tutorial will lead you through the steps of obtaining [source code](http://
 
 ##<a name="localEnvironment"></a>Get static site template running locally
 
-In a terminal window, change into the directory that you have created to hold all of your class work and clone the template Git repository from GitHub into this directory.
+The first step is to make your own copy of the base Git repository, an act known
+as [forking a repository](https://help.github.com/articles/fork-a-repo){:target="_blank"}. The repository you are going to fork
+is found at [https://github.com/Galvanize-IT/restaurant_site](https://github.com/Galvanize-IT/restaurant_site){:target="_blank"}.
+Navigate to the repository URL and use the fork button in the upper right hand corner to fork the repository
+to your GitHub account.
+
+![Forking the repository](/images/staticSiteDeploy/forkRepository.png)
+
+You can now clone the repository to your local machine using the GitHub UI. Go ahead and choose "Launch Application"
+when the dialog pops up and put the repository into your gSchoolWork directory.
+
+![Clone the repository](/images/staticSiteDeploy/cloneRepository.png)
+
+In a terminal window, you can then change into the newly cloned directory
+(now known as the [local development environment](http://www.agiledata.org/essays/sandboxes.html){:target="_blank"} for this site), install the necessary Ruby [dependencies](http://en.wikipedia.org/wiki/Dependency_(computer_science)){:target="_blank"} using [Bundler](http://bundler.io/){:target="_blank"} and run the site locally.
 
 {% terminal %}
-$ cd gSchoolWork
-$ git clone https://github.com/Galvanize-IT/restaurant_site.git
-Cloning into 'restaurant_site'...
-remote: Counting objects: 20, done.
-remote: Compressing objects: 100% (13/13), done.
-remote: Total 20 (delta 1), reused 14 (delta 1)
-Receiving objects: 100% (20/20), done.
-Resolving deltas: 100% (1/1), done.
-Checking connectivity... done
-{% endterminal %}
-
-You can then change into the newly cloned directory (now known as the [local development environment](http://www.agiledata.org/essays/sandboxes.html){:target="_blank"} for this site), install the necessary Ruby [dependencies](http://en.wikipedia.org/wiki/Dependency_(computer_science)){:target="_blank"} using [Bundler](http://bundler.io/){:target="_blank"} and run the site locally.
-
-{% terminal %}
-$cd restaurant_site
+$cd ~/gSchoolWork/restaurant_site
 $bundle install
 Fetching gem metadata from https://rubygems.org/.........
 Fetching additional metadata from https://rubygems.org/..
@@ -80,7 +81,8 @@ heroku	git@heroku.com:protected-caverns-4965.git (push)
 {% endterminal %}
 
 If you do not see the `heroku` remote, you will need to add it. You will need the [Git remote](http://git-scm.com/book/ch4-1.html#The-Git-Protocol){:target="_blank"} string
-from when the application was created, in this case `git@heroku.com:protected-caverns-4965.git`.
+from when the application was created, in this case `git@heroku.com:protected-caverns-4965.git`, but yours
+will be different.
 
 {% terminal %}
 $git remote add heroku git@heroku.com:protected-caverns-4965.git
@@ -194,8 +196,10 @@ Go and grab an instructor and have them accept any stories that are awaiting acc
 
 ## Homework Exercises
 
-We have gone through a lot of Git functionality in this lesson. Your homework is to learn a bit more about Git using the command line instead of
-the GitHub Gui. Please complete the following two online tutorials and come prepared with any questions you have:
+We have gone through a lot of Git functionality, both in the UI and on the command lin, in this lesson.
+Your homework is to learn a bit more about Git using the command line instead of
+the GitHub Gui. Please complete the following two online tutorials and come
+prepared with any questions you have:
 
 * [http://try.github.io/](http://try.github.io/){:target="_blank"}
 * [http://gitimmersion.com/](http://try.github.io/){:target="_blank"}
