@@ -199,9 +199,9 @@ Go and grab an instructor and have them accept any stories that are awaiting acc
 
 ## Homework Exercises
 
-We have gone through a lot of Git functionality, both in the UI and on the command lin, in this lesson.
-Your homework is to learn a bit more about Git using the command line instead of
-the GitHub Gui. Please complete the following two online tutorials and come
+We have gone through a lot of Git functionality, both in the UI and on the command line, in this lesson.
+Your homework is to solidify this change, add, commit, push workflow and learn a bit more about Git using the
+command line instead of the GitHub Gui. Please complete the following two online tutorials and come
 prepared with any questions you have:
 
 * [http://try.github.io/](http://try.github.io/){:target="_blank"}
