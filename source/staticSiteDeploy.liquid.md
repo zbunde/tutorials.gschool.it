@@ -56,7 +56,8 @@ When you navigate Chrome to [http://localhost:9292](http://localhost:9292){:targ
 ![Browsing the local development environment](/images/staticSiteDeploy/runningLocally.png)
 
 ## <a name="deploy"></a>Deploy template to Heroku
-You will now deploy the plain site from your local development environment to Heroku. First you will need to create an application within Heroku using the Heroku [command line interface](http://en.wikipedia.org/wiki/Command-line_interface) installed with the Heroku toolbelt.
+
+You will now deploy the plain site from your local development environment to Heroku. First, open a new tab in terminal and navigate to your site's directory, or cancel the local server in your existing terminal tab with `control-c`. Next you will need to create an application within Heroku using the Heroku [command line interface](http://en.wikipedia.org/wiki/Command-line_interface) installed with the Heroku toolbelt.
 
 {% terminal %}
 $heroku login
