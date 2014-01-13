@@ -247,4 +247,97 @@ When you see "Hello, world" in the newly opened browser window your Heroku insta
 $ rm -rf ~/gSchoolWork/ruby-sample
 {% endterminal %}
 
+## <a name="exercism"></a>Install Exercism CLI tool
+
+[Exercism](http://exercism.io){:target="_blank"} is a site that allows a user to quickly download small practice exercises in a variety
+of languages. We will be using Exercism.io to download Ruby exercises for warmup and other drills.
+
+First you need to download the latest [CLI tool from GitHub](https://github.com/exercism/cli/releases/latest){:target="_blank"}. You want
+the "exercism-darwin-amd64.tgz" version. This is the [64 bit version](http://en.wikipedia.org/wiki/64-bit_computing){:target="_blank"}
+for the Apple OS X operating system (aka [Darwin](http://en.wikipedia.org/wiki/Darwin_(operating_system)){:target="_blank"}).
+
+Next, you need to extract the command line tool into your [path](https://www.cs.purdue.edu/homes/cs348/unix_path.html){:target="_blank"}, also see [here for more information](http://en.wikipedia.org/wiki/PATH_(variable)){:target="_blank"}.
+
+{% terminal %}
+$tar -xvf ~/Downloads/exercism-darwin-amd64.tgz -C /usr/local/bin/
+x exercism
+{% endterminal %}
+
+You can then confirm that the CLI is set up properly in your path.
+
+{% terminal %}
+$ exercism --version
+exercism version 1.3.2
+{% endterminal %}
+
+You need to then set up an Exercism.io account via GitHub by navigating to the [site](http://exercism.io/){:target="_blank"} and clicking the "Start Now" button.
+
+![Exercism account creation](/images/computerSetup/exercismSetup.png)
+
+When you see this screen, you know that your account has been set up.
+
+![Exercism account creation success](/images/computerSetup/exercismSuccess.png)
+
+You should then create a new diretory for your Exercism exercises.
+
+{% terminal %}
+$ mkdir -p ~/gSchoolWork/exercism
+{% endterminal %}
+
+Now log into using the CLI within the newly created directory and fetch the first set of exercises, using the default directory, and the API key
+you get from the account section.
+
+![Exercism account](/images/computerSetup/exercismAccount.png)
+
+{% terminal %}
+$ cd ~/gSchoolWork/exercism
+$ exercism login
+Your GitHub username: msgehard
+Your exercism.io API key: < get this from the account section of Exercism.io >
+What is your exercism exercises project path?
+Press Enter to select the default (/Users/user/gSchoolWork/exercism):
+>
+Your credentials have been written to /Users/user/.exercism.go
+$ exercism fetch
+clojure - bob
+coffeescript - bob
+elixir - bob
+go - leap
+haskell - bob
+javascript - bob
+objective-c - bob
+ocaml - bob
+perl5 - bob
+python - bob
+ruby - bob
+scala - bob
+{% endterminal %}
+
+If everything went well, you should have a bunch of new directories in your exercism directory.
+
+{% terminal %}
+$ ls -l
+total 0
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 clojure
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 coffeescript
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 elixir
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 go
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 haskell
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 javascript
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 objective-c
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 ocaml
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 perl5
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 python
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 ruby
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 scala
+{% endterminal %}
+
+We will be using the ruby one only so if you can delete the rest of them if you'd like.
+
+{% terminal %}
+$ rm -rf clojure coffeescript elixir go haskell javascript objective-c ocaml perl5 python scala
+$ ls -l
+drwxr-xr-x  3 user  staff  102 Jan 13 08:37 ruby
+{% endterminal %}
+
 Congratulations, you now have a basic Ruby tool chain installed on your computer!
