@@ -118,7 +118,10 @@ Done installing documentation for bundler after 3 seconds
 
 Chrome will be our primary development browser because of the great built in [development tools](https://developers.google.com/chrome-developer-tools/){:target="_blank"}. If you typically use another browser, please get familiar with Chrome.
 
-To confirm successful installation, open up the Chrome browser from the Applications directory and set it as your default browser.
+You can install the Chrome Browser [here](https://www.google.com/intl/en/chrome/browser/)
+Click on the download once it is complete to open it. Then, drag the Chrome application to your applications folder as prompted.
+
+To confirm successful installation, open up the Chrome browser from the Applications directory and set it as your default browser. It will ask you to sign in with your Google account. This is optional. 
 
 
 
