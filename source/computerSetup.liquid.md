@@ -118,10 +118,10 @@ Done installing documentation for bundler after 3 seconds
 
 Chrome will be our primary development browser because of the great built in [development tools](https://developers.google.com/chrome-developer-tools/){:target="_blank"}. If you typically use another browser, please get familiar with Chrome.
 
-You can install the Chrome Browser [here](https://www.google.com/intl/en/chrome/browser/)
+You can install the Chrome Browser [here](https://www.google.com/intl/en/chrome/browser/).
 Click on the download once it is complete to open it. Then, drag the Chrome application to your applications folder as prompted.
 
-To confirm successful installation, open up the Chrome browser from the Applications directory and set it as your default browser. It will ask you to sign in with your Google account. This is optional. 
+To confirm successful installation, open up the Chrome browser from the Applications directory and set it as your default browser. It will ask you to sign in with your Google account. This is optional.
 
 
 
@@ -177,7 +177,7 @@ When the main window appears, you are all done.
 
 There are many ways to prove your identity to a remote website. The predominant way is by using a username/password combination. Another way it to use something called an [SSH Key](https://wiki.archlinux.org/index.php/SSH_Keys){:target="_blank"}. We will use SSH keys when communicating with various servers on the Internet.
 
-The first step in using SSH keys is to generate one. GitHub provides a great tutorial on how to generate an SSH key and how to associate it with your GitHub account. Please follow [this tutorial](https://help.github.com/articles/generating-ssh-keys){:target="_blank"} all the way through step 4. Also, please add a password to your ssh key as outlined in step 2.
+The first step in using SSH keys is to generate one. GitHub provides a great tutorial on how to generate an SSH key and how to associate it with your GitHub account. Please follow [this tutorial](https://help.github.com/articles/generating-ssh-keys){:target="_blank"} all the way through step 4. **Also, please add a password to your ssh key as outlined in step 2.**
 
 If you run the `cd ~/.ssh` command and you get the message that looks like `-bash: cd: /Users/user/.ssh: No such file or directory`, you don't have an ssh key and you can continue to step 2. When you get to step 2, the ssh-add command should look like this:
 
