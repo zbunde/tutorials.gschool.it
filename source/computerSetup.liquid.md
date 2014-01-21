@@ -30,7 +30,7 @@ drwxr-xr-x   2 user  staff    68 Dec 31 09:03 gSchoolWork
 
 [Homebrew](http://brew.sh/){:target="_blank"} is a tool that will allow you to easily install development tools to your Mac from source code. We will be using it throughout the class to install various tools as we need them.
 
-You will follow the instructions on the website to get it installed. When promptped to enter your password, use the password that you use to unlock your computer. When you are asked to install the command line tools, click the "Install" button. You do not need to install a full copy of XCode.
+You will follow the instructions on the website to get it installed. When prompted to enter your password, use the password that you use to unlock your computer. When you are asked to install the command line tools, click the "Install" button. You do not need to install a full copy of XCode. Copy the code below into the terminal to begin installing.
 
 {% terminal %}
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
