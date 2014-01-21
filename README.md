@@ -6,6 +6,12 @@ This is based off of [https://github.com/indirect/middleman-heroku-static-app](h
 * Ruby 2.1.0
 * Middleman
 * Deployed to [Heroku](http://tutorials-gschool-production.herokuapp.com/).
+* Make sure you have the Middleman gem installed:
+
+```ruby
+gem install middleman
+bundle install
+```
 
 To run locally:
 
