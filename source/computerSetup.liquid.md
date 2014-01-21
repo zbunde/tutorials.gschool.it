@@ -189,7 +189,9 @@ If you already have an SSH key as identified by step 1, please make sure that yo
 
 ## <a name="heroku"></a>Create Heroku account
 
-We will be using [Heroku](http://heroku.com){:target="_blank"} to quickly and easily deploy applications to the Web. You should sign up for an account on their site.
+We will be using [Heroku](http://heroku.com){:target="_blank"} to quickly and easily deploy applications to the Web. If you already have a Heroku account, please scroll down to the "I have a Heroku account" section. If you do not already have one set up, please follow the instructions below:
+
+You should sign up for an account on their site.
 
 Remember your username and password. You will need that any time you want to access the Heroku website. 
 
@@ -249,6 +251,58 @@ When you see "Hello, world" in the newly opened browser window your Heroku insta
 {% terminal %}
 $ rm -rf ~/gSchoolWork/ruby-sample
 {% endterminal %}
+
+## I already have a Heroku account
+
+If you don't have the Heroku toolbelt already, install it [here](http://toolbelt.heroku.com){:target="_blank"}. The toolbelt is software that allows you to easily deploy applications to Heroku. You will then need to open a terminal window and log into Heroku for the first time.
+
+Make sure that you are in the correct directory and clone the ruby-sample app
+{% terminal %}
+$ cd gSchoolWork
+$ git clone git://github.com/heroku/ruby-sample.git
+Cloning into 'ruby-sample'...
+remote: Reusing existing pack: 16, done.
+remote: Total 16 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (16/16), done.
+Resolving deltas: 100% (1/1), done.
+Checking connectivity... done
+$ cd ruby-sample/
+{% endterminal %}
+
+Visit your Heroku account in your [browser](https://dashboard.heroku.com/apps).
+
+At the bottom of your app dashboard page, click 'Create a New App'. Call it ruby-sample-test, create the app, and copy the Git URL.
+
+Back in your terminal, type the following commands to add the remote Heroku branch and keys and then push to Heroku. Replace the generic Git URL with the one you just copied from your app (git@heroku.com:app name.git).
+{% terminal %}
+$ git remote add heroku git@heroku.com:app name.git
+$ heroku keys:add
+Found existing public key: /Users/adam/.ssh/id_rsa.pub
+Uploading SSH public key /Users/adam/.ssh/id_rsa.pub... done
+$ git push heroku master
+The authenticity of host 'heroku.com (50.19.85.132)' can't be established.
+RSA key fingerprint is 8b:48:5e:67:0e:c9:16:47:32:f2:87:0c:1f:c8:60:ad.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'heroku.com,50.19.85.132' (RSA) to the list of known hosts.
+Initializing repository, done.
+Counting objects: 16, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 1.94 KiB | 0 bytes/s, done.
+Total 16 (delta 1), reused 16 (delta 1)
+-----> Ruby app detected
+< lots of output >
+To git@heroku.com:afternoon-harbor-4586.git
+ * [new branch]      master -> master
+$ heroku open
+Opening afternoon-harbor-4586... done
+{% endterminal %}
+
+When you see "Hello, world" in the newly opened browser window your Heroku installation is complete and working. You can delete the ruby-sample directory using `rm -rf`.
+
+Also, you can delete the app you created on Heroku by clicking the 'Delete App' button at the bottom of the settings page.
+
+![Heroku setup complete](/images/computerSetup/herokuInstalled.png)
 
 ## <a name="exercism"></a>Install Exercism CLI tool
 
