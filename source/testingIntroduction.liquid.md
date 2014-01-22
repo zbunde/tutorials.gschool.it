@@ -18,7 +18,7 @@ At the end of this demo, the student should be able to:
 
 ## Tech skill learned
 * Refactoring
-* [Minitest::Test](https://github.com/seattlerb/minitest){:target="_blank"}
+* [Minitest](https://github.com/seattlerb/minitest){:target="_blank"}, both Minitest::Test and Minitest::Spec
 
 ## Understanding Why
 * Writing automated tests:
@@ -72,6 +72,7 @@ Git commits in parens.
 * assert vs assert_equal ()
 * Simplify as much as you can. ()
 * Simplification is for long term understandability, not character preservation. ()
+* Change to Minitest::Spec for a bit easier readability. ()
 
 ## Homework (You do)
 
