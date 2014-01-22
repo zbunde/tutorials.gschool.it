@@ -9,7 +9,6 @@ This is based off of [https://github.com/indirect/middleman-heroku-static-app](h
 * Make sure you have the Middleman gem installed:
 
 ```ruby
-gem install middleman
 bundle install
 ```
 
