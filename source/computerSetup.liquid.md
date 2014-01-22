@@ -95,7 +95,7 @@ Found remote file https://rvm.io/binaries/osx/10.9/x86_64/ruby-2.1.0.tar.bz2
 To confirm that Ruby 2.1.0 is installed correctly, ask for the version at the command line.
 
 {% terminal %}
-$ ruby --version
+$ ruby \--version
 ruby 2.1.0p0 (2013-12-25 revision 44422) [x86_64-darwin12.0]
 {% endterminal %}
 
