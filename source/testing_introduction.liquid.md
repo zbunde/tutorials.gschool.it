@@ -102,6 +102,46 @@ pass in 10, then the program will return an array containing 1 through 10.
 1. If the number is a multiple of 5, then the program will replace the number in the array with the text "Buzz".
 1. If the number is a multiple of both 3 and 5, then program will replace the number in the array with the text "FizzBuzz".
 
+## Homework
+
+Complete all 4 exercises using good TDD style as demonstrated in class and the Minitest::Spec syntax.
+
+You should [create a Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
+with one sub-directory for each of the exercises. This git repository should be published to Github with the name
+"intro_to_tdd".
+
+Please work in groups of 4 and help others along as you go.
+
+Each person will write their own versions but you should use the group for help.
+
+1. odd/even
+    * The class will return the numbers starting with 1 and ending with the number that it was initialized with. For example, if I
+    pass in 10, then the program will return an array containing 1 through 10.
+    * If the number is even then the program will replace the number in the array with the text "Even".
+    * If the number is odd, then the program will replace the number in the array with the text "Odd".
+
+1. leap year calculator
+    * The class is not initialized with anything special.
+    * The year is a leap year if it is divisible by 4. (2001 is not a leap year but 1996 is a leap year)
+    * The year is a leap year if it is divisible by 100 and 400. (1900 is not a leap year but 2000 is a leap year)
+
+1. string calculator
+    * The class is not initialized with anything special.
+    * There is one method called `add` that adheres to the following rules:
+        * If the empty string is passed, the method returns 0.
+        * Otherwise the method returns the sum of the numbers in the string. For example, if the string "1" is passed then
+        the calculator returns 1. If the string "1,2" is passed, then the method returns 3.
+        * The method can take a string with any number of integers in it.
+        * The delimiter can be specified at initialization time. Any calls to `add` will use that delimiter.
+
+1. numeric calculator
+    * The class is not initialized with anything special.
+    * There is an `add` method that takes two numbers. It returns the sum of the two numbers.
+    * There is a `subtract` method that takes two numbers. It returns the difference of the two numbers.
+    * There is a `save` method that allows you to save a number to the calculator's memory. The number can be retrieved using the
+    `get` method.
+    * There is a `clear` method that clears the calculator's memory. When the memory is empty, `get` returns 0.
+
 ## More information
 
 * [Test Driven Development](http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530){:target="_blank"} by Example by Kent Beck
