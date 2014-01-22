@@ -76,9 +76,13 @@ TypeError: no implicit conversion of Fixnum into String
 {% endterminal %}
 
 The first thing we need to do to enable erb is to change the [file extension](http://en.wikipedia.org/wiki/Filename_extension){:target="_blank"}
-so that the site will know to process erb. You can do this by right-clicking on the file name in the list.
+so that the site will know to process erb. You can do this by going to your terminal and typing:
 
-![Erb file extension](/images/dynamicWebPage/erbFile.png)
+{% terminal %}
+$ mv index.html index.html.erb
+{% endterminal %}
+
+Ensure that your file's name has indeed changed to index.html.erb.
 
 You should test to make sure that everything is working OK by running your server after you
 make the change. If your server was already running, no need to start it again.
