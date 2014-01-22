@@ -1,4 +1,6 @@
-# [Introduction to Test Driven Development](https://github.com/Galvanize-IT/testingDemo){:target="_blank"}
+# Introduction to Test Driven Development
+
+Source code for in class work can be found [here](https://github.com/Galvanize-IT/testingDemo){:target="_blank"}.
 
 ## Goal
 At the end of this demo, the student should be able to:
