@@ -14,7 +14,7 @@
 * [HTML Introduction](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction){:target="_blank"}
 * [HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"}
 
-This turorial will lead you through building a basic structure for an [HTML5](http://www.w3.org/TR/html5/introduction.html#introduction) web page.
+This tutorial will lead you through building a basic structure for an [HTML5](http://www.w3.org/TR/html5/introduction.html#introduction) web page.
 In this tutorial, you will build build on the static website you used in the [previous tutorial](/staticSiteDeploy){:target="_blank"} to build a landing page for a new restuarant in town.
 The owner of the restaurant has expressed that the sole goal for this site right now is to act as a basic landing page so people know they are open and begin to come by the restaurant.
 You job is to build a one page, static website for them. The CSS for the site will be provided.
@@ -24,7 +24,7 @@ They have been prioritized by the client in the order they would like to see the
 
 You will be using the provided tests to help you drive out the development of the HTML content.
 These tests follow the flow of the Tracker stories. The flow you will follow is to remove the `skip` marker from a test, see the test failing and then write only the code that you need to make it pass.
-This is the very beginnings of your exposture to [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development){:target="_blank"} (aka TDD).
+This is the very beginnings of your exposure to [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development){:target="_blank"} (aka TDD).
 
 The testing library we are using is called [Miniest](https://github.com/seattlerb/minitest). The tests can be found in the /test directory in your local development environment. These tests can be run from the command line.
 
@@ -34,7 +34,7 @@ Run options: --seed 49924
 .
 Fabulous run in 0.039836s, 25.1029 runs/s, 25.1029 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
-{% endterminal %}
+{% endterminal %}0
 
 Every time you make a change to the HTML code, you should re-run your tests to see if the test you are working on now passes.
 You can easily do this by hitting the up arrow in the command line window. This will scroll through the commands you have previously run.
@@ -217,7 +217,7 @@ Total 132 (delta 50), reused 0 (delta 0)
 You can then open the stating environment and make sure everything looks good.
 
 {% terminal %}
-$heroku open
+$ heroku open
 Opening fast-falls-6618... done
 {% endterminal %}
 
