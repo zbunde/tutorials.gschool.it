@@ -90,9 +90,7 @@ The mechanics of test driven development (TDD)
 
 ## Implement together
 
-Implement the fizz buzz kata in class.
-
-Your class will be initialized with a number. This number will be used to determine the upper bound when you run the program.
+### Fizz Buzz
 
 The constraints:
 
@@ -102,9 +100,21 @@ pass in 10, then the program will return an array containing 1 through 10.
 1. If the number is a multiple of 5, then the program will replace the number in the array with the text "Buzz".
 1. If the number is a multiple of both 3 and 5, then program will replace the number in the array with the text "FizzBuzz".
 
+### Key value store
+
+The constraints:
+
+1. A user of the class can add a value stored under a key.
+1. A user can get the value for a key.
+1. A user can delete a key. When they do this, getting this key will return nil.
+1. A user can get the keys for the store. This will return a list of the keys in the store.
+1. A user can clear a store. Clearing a store deletes all of the keys and their values.
+
+Why don't we just use a Hash to implement this code?
+
 ## Homework
 
-Complete all 4 exercises using good TDD style as demonstrated in class and the Minitest::Spec syntax.
+Complete all exercises using good TDD style as demonstrated in class and the Minitest::Spec syntax.
 
 You should [create a Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
 with one sub-directory for each of the exercises. This git repository should be published to Github with the name
