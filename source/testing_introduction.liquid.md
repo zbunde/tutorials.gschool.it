@@ -13,14 +13,19 @@ At the end of this demo, the student should be able to:
     * assertion of results
     * teardown
 
-* understand Minitest::Test and Minitest::Spec syntax
+* understand Minitest::Test and RSpec syntax
+
+* have been exposed to [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"}
 
 ## XP practices learned
 * Test First Programming/TDD
 
 ## Tech skill learned
-* Refactoring
-* [Minitest](https://github.com/seattlerb/minitest){:target="_blank"}, both Minitest::Test and Minitest::Spec
+* [Refactoring](http://en.wikipedia.org/wiki/Code_refactoring){:target="_blank"}
+* [Bundler](http://bundler.io/){:target="_blank"}
+* [RubyGems](http://rubygems.org/){:target="_blank"}, libraries for sharing Ruby code
+* [Minitest::Test](https://github.com/seattlerb/minitest){:target="_blank"} syntax for reading [Exercism.io](http://exercism.io/){:target="_blank"} exercises
+* [RSpec](https://github.com/rspec/rspec){:target="_blank"}, which will be the primary testing framework for the rest of class
 
 ## Understanding Why
 
@@ -74,19 +79,17 @@ The mechanics of test driven development (TDD)
 
 **Thats it!**
 
-* Test code in one file, production code in another file ()
-* Write a test that fails for the correct reason. ()
-* Tests should cover all of the possible cases. ()
-* Requirements change. ()
-* Refactor to clean up duplication in tests. ()
-* Use a common setup to eliminate more code. ()
-* Use a library (Minitest::Test) to eliminate even more code. ()
-* assert vs assert_equal ()
-* Simplify as much as you can. ()
-* Simplification is for long term understandability, not character preservation. ()
-* Change to Minitest::Spec for a bit easier readability. ()
-
-*Git commits in parens.*
+* Test code in one file, production code in another file. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/6bf39f5744a2904aa4441e18af1effee6618ba31){:target="_blank"}
+* Write a test that fails for the correct reason. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/129ca394e8f1a273d6618d61e42619eed5923132){:target="_blank"}
+* Tests should cover all of the possible cases. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/78aef5556e779db58eac860f3a13b7d3b5a00a5a){:target="_blank"}, [Commit](https://github.com/Galvanize-IT/testingDemo/commit/f687310a9ccf84bbec98bed9d8e50ec5ef6d5667){:target="_blank"}
+* Requirements change. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/1c60dad327324b2715dee140cb341f2ba7efae20){:target="_blank"}
+* Refactor to clean up duplication in tests. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/660c5fe2d3f6b53cbae9d1434bc95eeeaf20a28c){:target="_blank"}
+* Use a common setup to eliminate more code. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/020f1278a9ab807bae8c923a608d5e55c4f0d06c){:target="_blank"}
+* Use a library (Minitest::Test) to eliminate even more code. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/d08995ed651109fee79699424b1345884eb1ab37){:target="_blank"}
+* assert vs assert_equal [Commit](https://github.com/Galvanize-IT/testingDemo/commit/a2cc25a6e10f7e0d802bebe0937c1feed0eaef12){:target="_blank"}
+* Simplify as much as you can. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/1c5b65a78c79f96fc6a12acb60ca486cd51e9a66){:target="_blank"}
+* Simplification is for long term understandability, not character preservation. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/7cbc4aee380f07653b06bf9e02ecb407e13c3832){:target="_blank"}
+* Change to RSpec for a bit easier readability. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/bcdb4878ea84df16729a56af36f98aad71e6cfcf){:target="_blank"}
 
 ## Implement together
 
@@ -114,11 +117,17 @@ Why don't we just use a Hash to implement this code?
 
 ## Homework
 
-Complete all exercises using good TDD style as demonstrated in class and the Minitest::Spec syntax.
+Complete all exercises using good TDD style as demonstrated in class and RSpec syntax.
 
 You should [create a Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
 with one sub-directory for each of the exercises. This git repository should be published to Github with the name
 "intro_to_tdd".
+
+Make sure that you have RSpec installed.
+
+{% terminal %}
+$ gem install rspec
+{% endterminal %}
 
 Please work in groups of 4 and help others along as you go.
 
