@@ -1,6 +1,6 @@
 module TutorialListHelpers
   def alphabetical_links(file_paths)
-    file_paths.sort.map do |file_path|
+    complete_files(file_paths).sort.map do |file_path|
       link_to titleize(file_name(file_path)), file_name(file_path)
     end
   end
@@ -19,5 +19,9 @@ module TutorialListHelpers
 
   def titleize(file_name)
     file_name.gsub("_", " ").capitalize
+  end
+
+  def complete_files(file_paths)
+    file_paths.reject{|f| f.include?("wip")}
   end
 end
