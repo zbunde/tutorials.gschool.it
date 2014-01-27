@@ -12,9 +12,8 @@ At the end of this demo, the student should be able to:
     * calling class under test
     * assertion of results
     * teardown
-
 * understand Minitest::Test and RSpec syntax
-
+* write tests for small classes. We will build on this skill throughout class as we build bigger systems and discusss testing at different levels.
 * have been exposed to [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"}
 
 ## XP practices learned
