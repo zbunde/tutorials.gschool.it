@@ -1,4 +1,4 @@
-# Setting up RubyMine for Awesomeness
+# Increasing your RubyMine keyboard foo
 
 ## Goal
 At the end of this demo, you should be able to do the following things without a mouse:
