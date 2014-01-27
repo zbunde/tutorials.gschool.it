@@ -1,4 +1,4 @@
-# Setting up Rubymine for Awesomeness
+# Setting up RubyMine for Awesomeness
 
 ## Goal
 At the end of this demo, you should be able to do the following things without a mouse:
@@ -10,71 +10,9 @@ At the end of this demo, you should be able to do the following things without a
 
 ## Understanding Why
 
-Being able to navigate files and run code without using the mouse saves time, because your hands don't have
-to constantly leave the home row and move to the mouse.
-
-## Tab Sizes
-
-By default, when you type TAB, Rubymine inserts spaces.  This is good, but sometimes it inserts too many spaces.
-
-In this section, you'll set all your TAB sizes to be 2 spaces:
-
-### General
-![description](/images/rubymineSetup/tab-size-general.png)
-
-### Haml
-![description](/images/rubymineSetup/tab-size-haml.png)
-
-### Javascript
-![description](/images/rubymineSetup/tab-size-javascript.png)
-
-### Ruby
-![description](/images/rubymineSetup/tab-size-ruby.png)
-
-### SASS
-![description](/images/rubymineSetup/tab-size-sass.png)
-
-### SCSS
-![description](/images/rubymineSetup/tab-size-scss.png)
-
-## Appearance
-
-Show all line numbers:
-
-![description](/images/rubymineSetup/appearance-show-line-numbers.png)
-
-## File Navigation
-
-Tell Rubymine to:
-* Open files when you click them once in the sidebar
-* Sync the file inspector on the left side whenever you navigate to a file
-
-![description](/images/rubymineSetup/autoscroll.png)
-
-## Change the Ruby SDK
-
-You may have several different Ruby versions on your system.  You can easily tell Rubymine which version
-of Ruby you'd like to use.
-
-![description](/images/rubymineSetup/ruby-sdk.png)
-
-When you change your Ruby SDK, Rubymine sometimes takes a minute to re-index the new Ruby files.
-
-![description](/images/rubymineSetup/reindexing.png)
-
-## Keep more items on your clipboard
-
-When you copy or cut something to your clipboard, Rubymine doesn't just remember the last thing you copied / pasted,
-it remembers several.  By default this limit is 5, but you can easily increase it:
-
-![description](/images/rubymineSetup/editor-clipboard.png)
-
-## Editor Tabs
-
-When you open multiple files in Rubymine, they open in tabs.  By default, if you have lots of files open, it displays
-those tabs in multiple rows, which takes away valuable space from your editor.
-
-![description](/images/rubymineSetup/editor-tabs.png)
+Being able to control your IDE/editor without using the mouse saves time, because your hands don't have
+to constantly leave the home row, move to the mouse and return to the home row to type code. RubyMine has a
+ton of keyboard shortcut
 
 ## Keyboard Shortcuts
 

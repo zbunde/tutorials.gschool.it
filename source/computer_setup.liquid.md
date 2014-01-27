@@ -173,6 +173,83 @@ When the main window appears, you are all done.
 
 ![Git Setup](/images/computerSetup/gitSetupDone.png)
 
+## <a name="rubymine"></a>Install and Configure RubyMine IDE
+
+### Installation
+
+We will be using [RubyMine](http://www.jetbrains.com/ruby/){:target="_blank"} as our primary [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment){:target="_blank"}. Yes there are many others and you
+can investigate them on your own time but in class you will be expected to use RubyMine configured
+in a certain way. The main reason for this rigidity is that we want people to be able to easily pair with everyone else in the class. If you using an editor, and keyboard shortcuts, that others don't know, it will be harder for
+them to efficiently pair with you on your machine. If you still have questions about this decision, please chat with an instructor.
+
+Grab a USB drive from an instructor with the latest RubyMine on it and open the [.dmg disk image](http://en.wikipedia.org/wiki/Apple_Disk_Image){:target="_blank"}. You can then drag the RubyMine icon into the folder on the right. This
+will copy RubyMine to your Applications directory.
+
+Open RubyMine using Spotlight (COMMAND-space). This may ask you to install a Java Runtime. If it does, click OK and wait for it to install.
+
+After it installs, you can re-open RubyMine and it may ask you for a license:
+
+![RubyMine License](/images/computerSetup/rubymineLicense.png)
+
+You can find that license information on the USB stick. Accept the license terms:
+
+![License Terms](/images/computerSetup/rubymineLicenseTerms.png)
+
+You can then set the default key bindings and the color scheme and restart the IDE:
+
+![Defaults](/images/computerSetup/rubymineDefaults.png)
+
+### Configuration
+
+Many of the out of the box settings for RubyMine don't necessarily line up with what the industry is using. This section will take you through the various configuration settings that you should only
+have to set after the initial installation of RubyMine. To get to the preferences panel follow this series of mouse clicks:
+
+![OpenPreferences1](/images/computerSetup/rubymineOpenPreferences1.png)
+
+![OpenPreferences2](/images/computerSetup/rubymineOpenPreferences2.png)
+
+You can always get back to this preferences panel by hitting COMMAND-, or selecting RubyMine...Preferences... from the top menu.
+
+#### Tab Sizes
+
+By default, when you type TAB, Rubymine inserts spaces.  This is good, but sometimes it inserts too many spaces by default.
+
+In this section, you'll set all your TAB sizes to be 2 spaces to be more in line to what the community is using:
+
+![description](/images/computerSetup/rubymine-tab-size-general.png)
+
+![description](/images/computerSetup/rubymine-tab-size-ruby.png)
+
+![description](/images/computerSetup/rubymine-tab-size-haml.png)
+
+![description](/images/computerSetup/rubymine-tab-size-javascript.png)
+
+![description](/images/computerSetup/rubymine-tab-size-sass.png)
+
+![description](/images/computerSetup/rubymine-tab-size-scss.png)
+
+#### Appearance
+
+Being able to communicate with someone via a line number in a file is the quickest way to get everyone on the same page. By default RubyMine doesn't do this so we need to turn on showing line numbers:
+
+![description](/images/computerSetup/rubymine-appearance-show-line-numbers.png)
+
+#### Keep more items on your clipboard
+
+When you copy or cut something to your clipboard, Rubymine doesn't just remember the last thing you copied / pasted,
+it remembers several.  By default this limit is 5, but you can easily increase it:
+
+![description](/images/computerSetup/rubymine-editor-clipboard.png)
+
+#### Editor Tabs
+
+When you open multiple files in Rubymine, they open in tabs.  By default, if you have lots of files open, it displays
+those tabs in multiple rows, which takes away valuable space from your editor. These settings will give you more room
+on your screen:
+
+![description](/images/computerSetup/rubymine-editor-tabs.png)
+
+
 ## <a name="sshKey"></a>Generate an SSH key
 
 There are many ways to prove your identity to a remote website. The predominant way is by using a username/password combination. Another way it to use something called an [SSH Key](https://wiki.archlinux.org/index.php/SSH_Keys){:target="_blank"}. We will use SSH keys when communicating with various servers on the Internet.
