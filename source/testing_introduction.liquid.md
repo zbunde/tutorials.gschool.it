@@ -1,4 +1,4 @@
-# Introduction to Test Driven Development
+# Starting down the road to Test Driven Development
 
 Source code for in class work can be found [here](https://github.com/Galvanize-IT/testingDemo){:target="_blank"}.
 
@@ -6,6 +6,7 @@ Source code for in class work can be found [here](https://github.com/Galvanize-I
 At the end of this demo, the student should be able to:
 
 * understand why automated testing is important
+* translate english language requirements into test cases for small classes. We will build on this skill throughout class as we build bigger systems and discuss testing at different levels.
 * explain the three parts of the TDD cycle
 * identify the different parts of a test
     * setup
@@ -13,18 +14,19 @@ At the end of this demo, the student should be able to:
     * assertion of results
     * teardown
 * understand Minitest::Test and RSpec syntax
-* write tests for small classes. We will build on this skill throughout class as we build bigger systems and discusss testing at different levels.
-* have been exposed to [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"}
+* understand the roles that [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"} play in the Ruby ecosystem
 
 ## XP practices learned
-* Test First Programming/TDD
+
+* Test First Programming
 
 ## Tech skill learned
-* [Refactoring](http://en.wikipedia.org/wiki/Code_refactoring){:target="_blank"}
+
 * [Bundler](http://bundler.io/){:target="_blank"}
 * [RubyGems](http://rubygems.org/){:target="_blank"}, libraries for sharing Ruby code
 * [Minitest::Test](https://github.com/seattlerb/minitest){:target="_blank"} syntax for reading [Exercism.io](http://exercism.io/){:target="_blank"} exercises
 * [RSpec](https://github.com/rspec/rspec){:target="_blank"}, which will be the primary testing framework for the rest of class
+* [Refactoring](http://en.wikipedia.org/wiki/Code_refactoring){:target="_blank"}
 
 ## Understanding Why
 
