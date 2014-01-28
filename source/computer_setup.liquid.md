@@ -2,6 +2,38 @@
 
 You will be spending a lot of time in front of a computer using many different, unfamiliar tools during your time at gSchool. This tutorial will guide you through installing the basic tools we will use. In addition to simply installing the tools, you should take a little time reading each website to understand where each tool fits into your toolbox (also called the toolchain) as a developer. This will help you long term as you form a mental model of the world of software development.
 
+## <a name="keyboardSetup"></a>Change some of the default OS X keyboard settings
+In order to make things a bit easier when developing, we are going to change a couple of the default keyboard settings on OS X.
+
+Make function keys standard function keys under Apple Icon...System Preferences...Keyboard:
+
+![Standard Function Keys](/images/computerSetup/standardFunctionKeys.png)
+
+This will allow us to use these function keys in RubyMine (installed later) as well as other programs that use them. If you want to use
+the shortcuts associated with the function keys (like volume control) you can hold down the fn key and then press the
+proper function key.
+
+Change Caps Lock key operate the same as the control key under Apple Icon...System Preferences...Keyboard:
+
+![Keyboard Modifier Keys](/images/computerSetup/keyboardModifierKeys.png)
+
+![Caps Lock is Control](/images/computerSetup/keyboardCapsLockKey.png)
+
+Not many developers use the Caps Lock key but the control key is used all of the time so we will make it easier to hit the control key.
+
+Tab to all controls under Apple Icon...System Preferences...Keyboard:
+
+![Tab to all controls](/images/computerSetup/keyboardTabToAllControls.png)
+
+This will allow us to use the keyboard to more easily move around the screen. Using the keyboard over the mouse to move around save a bit of time
+when coding and can help you get things done a bit more quickly and efficiently.
+
+Unbind existing F11 and F12 keys under Apple Icon...System Preferences...Mission Control:
+
+![Unbind existing function keys](/images/computerSetup/unbindExistingFunctionKeys.png)
+
+This will allow us to use all of the function keys in RubyMine.
+
 ## <a name="workDirectory"></a>Create directory that will house all of your classwork.
 
 As developers, we collect a lot of source code and artifacts for our various projects. Knowing where to easily find everything is a good skill to have, just like when you go looking for that pair of shoes. If you know they are in a specific closet and that closet is clean, they are easy to find. If you have no idea which closet they are in and each closet is messy, they will take a long time to find. 
