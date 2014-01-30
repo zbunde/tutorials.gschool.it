@@ -33,8 +33,10 @@ At the end of this demo, the student should be able to:
 Writing automated tests:
 
 * reduces the number of commands you have to run manually
-* reduces guessing about what code does or will do through immediate feedback
-* gives you the safety net to develop with courage
+* gives you the repeatable safety net to develop with courage
+* allows you to think through what the problem is/what the system does
+* allows you to document what the system does for developers who come after you
+* reduces guessing about how things work through immediate feedback
 
 Some quotes from "Extreme Programming Explained: Embrace Change (2nd Edition)" by Kent Beck and Cynthia Andres:
 
