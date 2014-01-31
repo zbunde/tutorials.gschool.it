@@ -13,7 +13,7 @@
 ## Tech skill learned
 
 * Ruby basics
-* Acceptance testing
+* Running acceptance tests
 
 ## Resources
 
@@ -30,7 +30,11 @@
     * [Learn to Program](http://pragprog.com/book/ltp2/learn-to-program){:target="_blank"} - not a complete reference but great for beginners. Suited for reading cover to cover.
     * [Pickaxe Book](http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0){:target="_blank"} - a pretty complete language reference book. Not meant for reading cover to cover.
 
-## Approach - not complete
+## Homework - not complete
+
+1. Go through [https://www.ruby-lang.org/en/documentation/quickstart/](https://www.ruby-lang.org/en/documentation/quickstart/){:target="_blank"} to learn about irb and running ruby from command line. <a name="irb"></a>
+
+1. Complete assignments below by getting the tests to pass <a name="programs"></a>
 
 Each item below should be implemented in a file that is named after the title of the item using proper Ruby file naming conventions. If you
 get stuck on one, write as much code as you can then write out your logic using comments and short English phrases for any code that you do not know how to write.
