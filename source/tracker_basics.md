@@ -1,4 +1,4 @@
-# Introduction to Pivotal Tracker
+# Introduction to [Pivotal Tracker](http://pivotaltracker.com){:target="_blank"}
 
 ## Goals
 Student should be able to:
@@ -101,4 +101,6 @@ work that you have during gSchool.
 
 ## References
 
-[Getting Started in Tracker](https://www.pivotaltracker.com/help/gettingstarted){:target="_blank"}
+* [Getting Started in Tracker](https://www.pivotaltracker.com/help/gettingstarted){:target="_blank"}
+* [Writing good user stories](http://pivotallabs.com/well-formed-stories/){:target="_blank"}
+* [Another look at writing good user stories](https://help.rallydev.com/writing-great-user-story){:target="_blank"}
