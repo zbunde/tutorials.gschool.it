@@ -8,6 +8,7 @@
 * [Online Sinatra book](http://sinatra-book.gittr.com/){:target="_blank"}
 * [eRb templates](http://www.stuartellis.eu/articles/erb/){:target="_blank"}
 * [Ruby heredocs](http://blog.jayfields.com/2006/12/ruby-multiline-strings-here-doc-or.html){:target="_blank"}
+* [More info about HTTP and Rails\(http://robots.thoughtbot.com/back-to-basics-http-requests){:target="_blank"}
 
 ## Goals
 
