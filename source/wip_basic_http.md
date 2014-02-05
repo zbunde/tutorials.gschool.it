@@ -22,7 +22,7 @@ A student should be able to:
 * Know the 5 classes of responses
 * Know the status code for OK, not found, redirected and server error responses
 * Understand what is means to be a stateless protocol
-* Understand basics of how web applications implement state over HTTP
+* Understand how web applications implement state over HTTP
 
 
 ## XP practices learned
@@ -65,7 +65,7 @@ to interact with web servers
 * [URL](http://en.wikipedia.org/wiki/URL){:target="_blank"}
     * Identify the parts of a URL
 * [HTTP verbs](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html){:target="_blank"}
-    * GET - get me a list of things
+    * GET - show me something.
     * POST - create me a new thing
     * PUT - update a thing
     * DELETE - delete a thing
@@ -74,6 +74,20 @@ to interact with web servers
     * The browser telling the server what it can handle
     * Key/value pairs
     * Show them in the Dev Tools
+* [Query string](http://en.wikipedia.org/wiki/Query_string){:target="_blank"}
+    * http://example.com/search?q=pizza&numRecords=100
+    * key/value pairs
+    * each key/value pair is called a query parameter.
+* [Form data](http://en.wikipedia.org/wiki/Form_(HTML)){:target="_blank"}
+    * key/value pairs
+    * Examples: &lt;input type="text"&gt;, &lt;input type="password"&gt;, &lt;select&gt;, etc
+* [Cookies](http://en.wikipedia.org/wiki/HTTP_cookie){:target="_blank"}
+        * show in Chrome Dev Tools
+        * key/value pairs
+        * limited in size to 4kB
+            * Don't store big things in cookie
+        * Rails 3 - can be signed to prevent tampering with but sent in plain text
+        * Rails 4 - signed and encrypted so end users can not read it
 
 ## Getting a response from the server
 * [Response codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes){:target="_blank"}
@@ -98,20 +112,13 @@ to interact with web servers
     * The goods
 
 ## HTTP as a [stateless protocol](http://en.wikipedia.org/wiki/Stateless_server){:target="_blank"}
-
 * Server does not remember anything about the request once it is done processing it.
 * Client has to provide enough information for server to "remember" you on subsequent requests.
-* Various techniques:
-    * [Cookies](http://en.wikipedia.org/wiki/HTTP_cookie){:target="_blank"}
-        * show in Chrome Dev Tools
-        * key/value pairs
-        * limited in size to 4kB
-        * Rails 3 - can be signed to prevent tampering with but sent in plain text
-        * Rails 4 - signed and encrypted so end users can not read it
-    * Hidden form fields
+* Server stores information identified by information passed in:
+    * Cookie
+    * Hidden Form Field
         * &lt;input type="hidden"&gt;
-    * [Query string](http://en.wikipedia.org/wiki/Query_string){:target="_blank"}
-        * http://example.com/search?q=pizza&numRecords=100
-        * key/value pairs
-    * Server side session via cookies/hidden form fields
-        * store state on server identified by information in cookie/hidden form field
+    * Query string
+        * http://example.com/?sessionId=123456
+* Each way has security ramifications that we will discuss later.
+
