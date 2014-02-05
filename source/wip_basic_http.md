@@ -1,6 +1,8 @@
 # What happens when I request a web page? or Introduction to HTTP
 
-[HTTP Spec](http://www.w3.org/Protocols/rfc2616/rfc2616.html){:target="_blank"}
+## References
+
+* [HTTP Spec](http://www.w3.org/Protocols/rfc2616/rfc2616.html){:target="_blank"}
 
 ## Goals
 A student should be able to:
