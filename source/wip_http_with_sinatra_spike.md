@@ -47,7 +47,7 @@ A student should be able to:
 * Implement an endpoint '/' that displays a page with a message to the user and a link to the items page found at '/items'.
     * Tell me the parts of the URL 'http://localhost:4567/'
 
-* Implement the '/items' endpoint that shows a web page with a list of 3 menu items on it. Each item displays a title.
+* Implement the '/items' endpoint that shows a web page with a list (ul) of 3 menu items on it. Each item (li) displays a title.
     * Tell me the parts of the URL 'http://localhost:4567/items'
 
 ## Homework
