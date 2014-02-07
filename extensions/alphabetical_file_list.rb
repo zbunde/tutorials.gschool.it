@@ -18,7 +18,7 @@ module TutorialListHelpers
   end
 
   def titleize(file_name)
-    file_name.gsub("_", " ").capitalize
+    file_name.gsub("_", " ").capitalize.gsub(/http/i, 'HTTP').gsub(/html/i, 'HTML')
   end
 
   def complete_files(file_paths)
