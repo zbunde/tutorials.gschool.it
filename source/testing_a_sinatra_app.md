@@ -37,7 +37,7 @@ A student should be able to:
 
 ## Acceptance tests
 
-* End to end test
+* End-to-end test
     * Some people use other words to describe this type of test, remember the concept of being user facing
 * Exercises user facing interface
     * Helps us understand and codify the needs of the user
@@ -69,17 +69,17 @@ A student should be able to:
     * Get a volunteer to also clone the fork
 * Initialize RSpec
 * Write tests for adding a new item
-    * Use save_and_open_page to see what tests are seeing
+    * Use `save_and_open_page` to see what tests are seeing
     * Visit the home page
     * View the items
     * You want to add an item
     * Fill in the item information
     * Submit the form
     * Confirm that the item got added to the items list
-        * Show use of 'within'
+        * Show use of `within`
 * Push to GitHub
 * Get tests building on Travis CI once on GitHub
-    * .travis.yml file
+    * `.travis.yml` file
     * Log into Travis CI site
     * Turn on CI for a specific repository
     * Viewing build status
