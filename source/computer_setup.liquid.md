@@ -281,6 +281,16 @@ on your screen:
 
 ![description](/images/computerSetup/rubymine-editor-tabs.png)
 
+## <a name="globalGitIgnore"></a>Set up global gitignore file
+
+Sometimes there are files or directories that you never want to add to git source control so you [ignore them](https://help.github.com/articles/ignoring-files){:target="_blank"}.
+The easiest way is to set up a global gitignore. First we put the text '.idea/' into the global gitignore file and then we tell git to use that file as the global
+gitignore.
+
+{% terminal %}
+$ echo '.idea/' > ~/.gitignore_global
+$ git config --global core.excludesfile ~/.gitignore_global
+{% endterminal %}
 
 ## <a name="sshKey"></a>Generate an SSH key
 
