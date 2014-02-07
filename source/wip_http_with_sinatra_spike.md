@@ -17,7 +17,7 @@ A student should be able to:
 * Understand what a 'spike' is and why they are useful in software development
 * Be able to define Sinatra routes, with the proper HTTP verb, for different endpoints
 * Understand concept of localhost and a hosts file
-* Create eRb templates
+* Create eRb templates to render HTML
 
 ## XP practices learned
 
@@ -44,17 +44,24 @@ A student should be able to:
 
 ## Demo
 
-* Implement an endpoint '/' that displays a page with a message to the user and a link to the items page found at '/items'.
-    * Tell me the parts of the URL 'http://localhost:4567/'
+* Implement an endpoint '/', also known as the root of the site
+    * Displays a page with a link to the items page found at '/items'.
 
-* Implement the '/items' endpoint that shows a web page with a list (ul) of 3 menu items on it. Each item (li) displays a title.
-    * Tell me the parts of the URL 'http://localhost:4567/items'
+* Implement the '/items' endpoint
+    * Shows a web page with a list (ul) of 3 menu items on it. Each item (li) displays a name.
+    * Shows a link to the '/items/new' endpoint at the top of the page.
+    * Shows a "Show Item" link for each item in the list. The link should link to the
+    '/item/[item id]' endpoint. For example, for item with id 1, the href of the link should be
+    '/item/1'.
+
+* Talk about what localhost is and what a hosts file is
 
 ## Homework
 
 Implement solutions to the following exercises in addition to the two demo exercises above.
 You should create a new, well named directory in your gSchool working directory and initialize a
 Git repository there. You should also create a remote GitHub repository and push all changes to that repository.
+Additionally, you should create a Heroku application and deploy your finished application there.
 
 * Modify the '/items' endpoint to look for a query parameter "filter" that contains a string to filter
 the items by.
@@ -63,24 +70,29 @@ the items by.
     * If the filter param is empty then all items show up on the page.
     * If the filter param does not match any of the items, then nothing displays on items page.
 
-* Implement a '/items/:id' endpoint with the proper HTTP verb for showing a single item
-    * If the :id parameter is a key of the items hash, then display a page that has an h1 that is the item name.
-    * If the :id parameter is a key that doesn't exist (for example id = 5 doesn't exist in our system immediately), then
-    return the status code for Not Found and a generic :not_found template.
-
 * Implement a '/items/new' endpoint that simply displays an empty form to enter a new item.
     * It will display an [HTML form](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms){:target="_blank"},
     a text box and a submit button.
-    * The form will submit to a '/items' endpoint, written next, and use the value of the text box to create a new
-    item. You will need to figure out what the form method is knowing that this for creates a new item. Hint: the verb you need is not GET.
+    * The form will submit to the '/items' endpoint, written next, and use the value of the text box to create a new
+    item. You will need to figure out what the form method is knowing that this for creates a new item. Hint: the method you need is not GET.
 
 * Implement a '/items' endpoint that will receive the form data from above and create a new item.
     * You need to figure out what the correct HTTP verb to use here since you already have a '/items' endpoint
-    that uses the GET verb.
+    that uses the GET verb. This will be the same as the form method from above.
+
+* Implement a '/items/:id' endpoint with the proper HTTP verb for showing a single item
+    * If the :id parameter is a key of the items hash, then display a page that has an h1 that has the
+    text "Showing [item name]".
+    * If the :id parameter is a key that doesn't exist (for example id = 5 doesn't exist in our system immediately), then
+    return the status code for Not Found and a generic :not_found template.
+
+* Add a edit link to the to the '/items/:id' page
+    * This link will point to the '/items/[item id]/edit' endpoint.
+    * For example, if you are looking at '/items/2' then the link will be '/items/2/edit'.
 
 * Implement a '/items/:id/edit' endpoint that displays the same form used in the '/items/new' endpoint.
     * The form url is '/items/[id of the item you are looking at]'. For example, '/items/2'.
-    * The form method is not POST. See [this post](http://mikeebert.tumblr.com/post/26877173686/quick-tip-using-put-and-delete-in-sinatra){:target="_blank"}
+    * The form method is not 'post'. See [this post](http://mikeebert.tumblr.com/post/26877173686/quick-tip-using-put-and-delete-in-sinatra){:target="_blank"}
     for how to send verbs other than POST from an HTML form to Sinatra.
     * If the :id parameter is an index that doesn't exist (for example id = 5), then do not display the form but
     return the status code for Not Found and a generic :not_found template since the item doesn't exist in our system.
@@ -92,7 +104,7 @@ what HTTP verb to use since you already have a '/items/:id' endpoint that uses t
     * For example, if I go to '/items/1/edit' and enter "Tandoori Chicken" then the item at id 1 in the items
     hash will now be "Tandoori Chicken" instead of "Chicken Tikka Masala" from the demo.
 
-* Add a delete button to the '/items' page for each item.
+* Add a delete button to the '/items/:id' page for each item.
     * This button will be the submit button of a form with no form fields that issues a request (see above) to the
     URL '/items/[id of the item]' with the form action that you specify.
     * For example, if I am drawing the delete button for the item of id 1, then the URL for the form will be '/items/1'.
