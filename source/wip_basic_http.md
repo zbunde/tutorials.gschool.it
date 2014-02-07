@@ -1,4 +1,4 @@
-# What happens when I request a web page? or Introduction to HTTP
+# What happens when I request a web page?
 
 ## References
 
@@ -43,7 +43,7 @@ A student should be able to:
     * IP addresses are like phone numbers for an office building
     * Ports are like mail boxes within that office building
     * [List of known ports](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers){:target="_blank"}
-    * Can use the IP address directly if you knew it.
+    * Can use the IP address directly if you knew it (most of the time)
     * For high volume sites like google.com, it is a load balancer that hides the fact that there are hundreds of computers servicing requests.
 
 1. Server processes the request, maybe making requests to other servers like database servers, and sends back the dynamic HTML response for google.com.
