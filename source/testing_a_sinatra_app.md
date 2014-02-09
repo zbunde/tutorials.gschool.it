@@ -38,9 +38,12 @@ A student should be able to:
 ## Acceptance tests
 
 * End-to-end test
-    * Some people use other words to describe this type of test, remember the concept of being user facing
+    * Slowest type of testing because it is exercising the whole system
+    * Long term use sparingly, right now don't worry about it
+        * We will evolve into other layers of testing
+    * People use other terms to describe this type of test, remember the concept of being user facing
 * Exercises user facing interface
-    * Helps us understand and codify the needs of the user
+    * Helps us understand and document the needs of the user
     * Measure of external quality, how well the system meets user needs
 * Treats system as a [black box](http://en.wikipedia.org/wiki/Black_box_testing){:target="_blank"}
 * Helps us build "walking skeleton", thinnest slice of functionality that works end to end and adds user facing value
@@ -94,8 +97,8 @@ A student should be able to:
 
 ## Homework
 
-Your homework is to complete the test first development of the spike application, without using
-any of the code that you wrote for the spike.
+Your homework is to complete the test first development of the spike application using
+acceptance tests, without using any of the code that you wrote for the spike.
 
 You will pair on this assignment, switching machines after each item list item below.
 
