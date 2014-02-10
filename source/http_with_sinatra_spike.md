@@ -45,6 +45,7 @@ A student should be able to:
 ## Demo
 
 * Implement an endpoint `/`, also known as the root of the site
+    * Show how to use [rerun](https://github.com/alexch/rerun/){:target="_blank"} for automatic reloading of site after first commit. `gem install rerun` and `rerun 'ruby app.rb'`
     * Displays a page with a link to the items page found at `/items`.
 
 * Implement the `/items` endpoint
