@@ -14,6 +14,8 @@ At the end of this demo, the student should be able to:
     * assertion of results
     * teardown
 * understand Minitest::Test and RSpec syntax
+* unerstand what a [dependency](http://en.wikipedia.org/wiki/Coupling_(computer_programming)){:target="_blank"} is
+* have a basic understanding of semantic versioning
 * understand the roles that [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"} play in the Ruby ecosystem
 
 ## XP practices learned
@@ -24,6 +26,7 @@ At the end of this demo, the student should be able to:
 
 * [Bundler](http://bundler.io/){:target="_blank"}
 * [RubyGems](http://rubygems.org/){:target="_blank"}, libraries for sharing Ruby code
+* [Semantic Versioning](http://semver.org/){:target="_blank"}
 * [Minitest::Test](https://github.com/seattlerb/minitest){:target="_blank"} syntax for reading [Exercism.io](http://exercism.io/){:target="_blank"} exercises
 * [RSpec](https://github.com/rspec/rspec){:target="_blank"}, which will be the primary testing framework for the rest of class
 * [Refactoring](http://en.wikipedia.org/wiki/Code_refactoring){:target="_blank"}
@@ -92,6 +95,7 @@ The mechanics of test driven development (TDD)
 * Simplify as much as you can. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/1c5b65a78c79f96fc6a12acb60ca486cd51e9a66){:target="_blank"}
 * Simplification is for long term understandability, not character preservation. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/7cbc4aee380f07653b06bf9e02ecb407e13c3832){:target="_blank"}
 * Change to RSpec for a bit easier readability. [Commit](https://github.com/Galvanize-IT/testingDemo/commit/bcdb4878ea84df16729a56af36f98aad71e6cfcf){:target="_blank"}
+    * Talk about dependencies, Bundler, RubyGems and semantic versioning
 
 ## Implement together
 
