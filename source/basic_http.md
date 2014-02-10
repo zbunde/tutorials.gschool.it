@@ -70,6 +70,8 @@ to interact with web servers
     * PUT - update a thing
     * DELETE - delete a thing
     * Safe and idempotent verbs
+    * Browsers only understand GET and POST. In order to use the others you have to tell
+    the web framework what verb to use in a special way. You will see this in the homework assignment.
 * [Request headers](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields){:target="_blank"}
     * The browser telling the server what it can handle
     * Key/value pairs

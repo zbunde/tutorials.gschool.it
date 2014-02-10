@@ -87,13 +87,14 @@ Implement a `/items` endpoint that will receive the form data from above and cre
 
   * You need to figure out what the correct HTTP verb to use here since you already have a `/items` endpoint
   that uses the GET verb. This will be the same as the form method from above.
+  * After successfully adding a new item, you should redirect to the '/items' page.
 
 #### 3. Users can see a single item
 
 Implement a `/items/:id` endpoint with the proper HTTP verb for showing a single item
 
   * If the `:id` parameter is a key of the items hash, then display a page that has an `h1` that has the
-  text "Showing [item name]".
+  text "Showing [item name]". Beware all values in the params hash are strings and your items has has integers as keys.
   * If the :id parameter is a key that doesn't exist (for example id = 5 doesn't exist in our system immediately), then
   return the status code for Not Found and a generic :not_found template.
 
@@ -107,8 +108,10 @@ Add a edit link to the to the `/items/:id` page
 Implement a `/items/:id/edit` endpoint that displays the same form used in the `/items/new` endpoint.
 
   * The form url is `/items/[id of the item you are looking at]`. For example, `/items/2`.
-  * The form method is not `post`. See [this post](http://mikeebert.tumblr.com/post/26877173686/quick-tip-using-put-and-delete-in-sinatra){:target="_blank"}
-  for how to send verbs other than POST from an HTML form to Sinatra.
+  * The form method will be `post` but you will also have to send Sinatra the HTTP verb for updating an item (remember what it is?)
+  since the browser won't send the right one.
+  See [this post](http://mikeebert.tumblr.com/post/26877173686/quick-tip-using-put-and-delete-in-sinatra){:target="_blank"}
+  for how to send additional verbs other than POST from an HTML form to Sinatra.
   * If the `:id` parameter is an index that doesn't exist (for example id = 5), then do not display the form but
   return the status code for Not Found and a generic `:not_found` template since the item doesn't exist in our system.
 
@@ -117,20 +120,21 @@ Implement a `/items/:id` endpoint that will receive the data from the form imple
 You will need to figure out what HTTP verb to use since you already have a `/items/:id` endpoint that uses the GET verb.
 
   * The value of the text box will update the item at the location in the hash denoted by
-  the id.
-  * For example, if I go to `/items/1/edit` and enter "Tandoori Chicken" then the item at id 1 in the items
+  the id. For example, if I go to `/items/1/edit` and enter "Tandoori Chicken" then the item at id 1 in the items
   hash will now be "Tandoori Chicken" instead of "Chicken Tikka Masala" from the demo.
+  * The user will be redirected to the '/items' page.
 
 #### 5. Users can delete items
 
 Add a delete button to the `/items/:id` page for each item.
 
-  * This button will be the submit button of a form with no form fields that issues a request (see above) to the
-  URL `/items/[id of the item]` with the form action that you specify.
+  * This button will be the submit button of a form with no form fields that issues a request to the
+  URL `/items/[id of the item]` with the form action of 'post' and a hidden action that you specify (see post from above).
   * For example, if I am drawing the delete button for the item of id 1, then the URL for the form will be `/items/1`.
 
 Implement a `/items/:id` endpoint that removes the item with the id passed in.
 
   * If the item does not exist, then you don't have to do anything special just return an OK status.
+  * Redirect the user to the '/items' page.
   * Why do the edit and update endpoints for an item (`/items/:id`) return a status of Not Found when the item does not exist but this
   endpoint doesn't? Leave the answer in a comment at the top of this route in your code.
