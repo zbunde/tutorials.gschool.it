@@ -40,7 +40,7 @@ A student should be able to:
 * End-to-end test
     * Slowest type of testing because it is exercising the whole system
     * Long term use sparingly, right now don't worry about it
-        * We will evolve into other layers of testing
+        * We will evolve into other layers of testing to replace some acceptance tests
     * People use other terms to describe this type of test, remember the concept of being user facing
 * Exercises user facing interface
     * Helps us understand and document the needs of the user
@@ -74,12 +74,12 @@ A student should be able to:
 * Write tests for adding a new item
     * Use `save_and_open_page` to see what tests are seeing
     * Visit the home page
-    * View the items
-    * You want to add an item
+    * View the items by clicking the 'List of items' link
+    * You want to add an item by clicking on the 'Add item' link
     * Fill in the item information
     * Submit the form
     * Confirm that the item got added to the items list
-        * Show use of `within`
+        * Show use of `within` to make sure you are looking in the right place
 * Push to GitHub
 * Get tests building on Travis CI once on GitHub
     * `.travis.yml` file
@@ -111,7 +111,6 @@ Before switching machines, make sure that the Travis CI build for is green.
 1. Write tests for what happens when you click the "Show Item" link
 for the item you created.
     * These steps should check for the presence of the text in the h1 tag on the show page.
-    index page in the same scenario.
     * These tests should continue immediately under test that check for the name on the
     * Do not implement the tests for clicking the delete button or the edit link.
 
