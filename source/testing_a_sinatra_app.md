@@ -71,6 +71,7 @@ A student should be able to:
 * Fork and clone the repository
     * Get a volunteer to also clone the fork
 * Initialize RSpec
+    * Make sure you put in `ENV['RACK_ENV'] = 'test'` into spec helper
 * Write tests for adding a new item
     * Use `save_and_open_page` to see what tests are seeing
     * Visit the home page
