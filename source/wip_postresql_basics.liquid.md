@@ -9,7 +9,11 @@
 ## Goals
 A student should be able to:
 
-* Understand what a relational database is
+* Understand what a relational database is and why you use it
+* Undertand the parts of a relational database
+    * Table
+    * Row
+    * Column
 * create a new database
 * create a new table
 * insert data into a table
