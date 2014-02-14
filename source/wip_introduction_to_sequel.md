@@ -23,13 +23,15 @@ A student should be able to:
     * [Migrations](http://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html){:target="_blank"}
 
 
-## Use Sequel in the tested sinatra app
+## Use Sequel in the tested sinatra app (integrate_sequel_into_sinatra repository)
 
 Why? All of the data goes away when we re-start the server.
     * Show example of this.
 
 How do we fix it? Use a database as a [persistent](http://en.wikipedia.org/wiki/Persistence_(computer_science)){:target="_blank"}
 store for our data.
+
+Start with
 
 Steps to implement persistent storage:
 
