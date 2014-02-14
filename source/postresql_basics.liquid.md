@@ -54,11 +54,11 @@ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ## Creating users in PostgreSql
 
 Just like you have users on your computer, Postgres allows us to create users that have access to the databases within PostgreSql.
-This series of steps will create a user named mike, ask for a password and give it the proper permissions in PostgreSql. You should use your first
-name as the user name and password as the password. You will use this username/password combination when we start accessing
+This series of steps will create a user named mike, ask for a password and give it the proper permissions in PostgreSql. You should use gschool_user
+as the user name and password as the password. You will use this username/password combination when we start accessing
 
 {% terminal %}
-$ createuser --pwprompt --interactive mike
+$ createuser --pwprompt --interactive gschool_user
 Enter password for new role:
 Enter it again:
 Shall the new role be a superuser? (y/n) n
