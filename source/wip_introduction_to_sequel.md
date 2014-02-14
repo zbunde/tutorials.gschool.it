@@ -31,8 +31,6 @@ Why? All of the data goes away when we re-start the server.
 How do we fix it? Use a database as a [persistent](http://en.wikipedia.org/wiki/Persistence_(computer_science)){:target="_blank"}
 store for our data.
 
-Start with
-
 Steps to implement persistent storage:
 
 1. Create the database to house the data so that others can easily create it.
@@ -51,6 +49,9 @@ Steps to implement persistent storage:
     * This acts as a data store, aka a place to put our data
     * As the tests run, the database gets "dirty". Tests assume a clean database every time.
         * Using save_and_open_page is your friend to find this
+
+1. Add in a price for an item
+    * Do with students help...
 
 ## Homework
 
