@@ -7,9 +7,18 @@
 ## Goals
 A student should be able to:
 
-* create a gemfile with the Sequel gem version specified
+* understand why we use databases in our web applications
+* add gems with version information to a Gemfile
 * understand the purpose of a readme file
 * allow future team members to quickly get database up and running using database creation scripts and migrations
+* write a Sequel migration
+* use Sequel to add, find, update and delete records in the database
+* understand the role of database cleaner in when running the tests
+* use save_and_open_page to troubleshoot tests
+* understand why we need multiple databases in a web application
+* show two ways how to list the databases using psql
+* change databases using psql
+* show the tables in a database using psql
 
 ## XP practices learned
 
@@ -19,6 +28,7 @@ A student should be able to:
 ## Tech skill learned
 
 * [Bunler gemfiles](http://bundler.io/v1.3/gemfile.html){:target="_blank"}
+* [Database Cleaner](http://rubygems.org/gems/database_cleaner){:target="_blank"}
 * Sequel Gem
     * [Migrations](http://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html){:target="_blank"}
 
@@ -31,11 +41,9 @@ Why? All of the data goes away when we re-start the server.
 How do we fix it? Use a database as a [persistent](http://en.wikipedia.org/wiki/Persistence_(computer_science)){:target="_blank"}
 store for our data.
 
-Steps to implement persistent storage:
-
 1. Create the database to house the data so that others can easily create it.
     * Talk about use of a readme and automation to communicate with a team.
-    * `psql -l` to make sure it got created
+    * `psql -l` pr `\l` to make sure it got created
     * Use `\connect integrate_sequel_into_sinatra` to connect to database
     * Use `\d` to show what is in database
 
@@ -43,15 +51,20 @@ Steps to implement persistent storage:
     * Migrations only run if they haven't been run in the past.
     * This allows you to incrementally change your data model
     * How do I tell what columns I need?
-    * Use `\d` to show the stuff that got created
+    * Use `\d` to show the things that got created
 
-1. Begin to integrate the database into the Items class
+1. Integrate the database into the Items class
     * This acts as a data store, aka a place to put our data
     * As the tests run, the database gets "dirty". Tests assume a clean database every time.
         * Using save_and_open_page is your friend to find this
+        * How do we fix this?
+
+1. What happens if we add some items to the database and run our tests?
+    * How can we fix this?
 
 1. Add in a price for an item
-    * Do with students help...
+    * Where do I start?
+    * Do with students help.
 
 ## Homework
 
