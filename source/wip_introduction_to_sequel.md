@@ -11,14 +11,18 @@ A student should be able to:
 * add gems with version information to a Gemfile
 * understand the purpose of a readme file
 * allow future team members to quickly get database up and running using database creation scripts and migrations
+* show two ways how to list the databases using psql
+* change databases using psql
+* show the tables in a database using psql
 * write a Sequel migration
 * use Sequel to add, find, update and delete records in the database
 * understand the role of database cleaner in when running the tests
 * use save_and_open_page to troubleshoot tests
 * understand why we need multiple databases in a web application
-* show two ways how to list the databases using psql
-* change databases using psql
-* show the tables in a database using psql
+* Troubleshooting Heroku applications using `heroku logs`
+* Set up a database on Heroku for use with an application
+* Have an understanding of environment variables and how they are used on Heroku
+* Running commands for a Heroku appication using `heroku run`
 
 ## XP practices learned
 
@@ -61,6 +65,13 @@ store for our data.
 
 1. What happens if we add some items to the database and run our tests?
     * How can we fix this?
+
+1. When I push to Heroku, my application breaks viewing items?
+    * `heroku logs` to troubleshoot
+    * Setting up a database using [Heroku add-ons](https://addons.heroku.com/){:target="_blank"}
+    * Configuring the [database url](https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-ruby){:target="_blank"} using
+    [environment variables](http://en.wikipedia.org/wiki/Environment_variable){:target="_blank"}.
+    * Running migrations using `heroku run 'sequel -m migrations $HEROKU_POSTGRESQL_WHITE_URL'`
 
 1. Add in a price for an item
     * Where do I start?
