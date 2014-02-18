@@ -15,7 +15,7 @@
 * [HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"}
 
 This tutorial will lead you through building a basic structure for an [HTML5](http://www.w3.org/TR/html5/introduction.html#introduction) web page.
-In this tutorial, you will build build on the static website you used in the [previous tutorial](/staticSiteDeploy){:target="_blank"} to build a landing page for a new restuarant in town.
+In this tutorial, you will build build on the static website you used in the [previous tutorial](/static_site_deploy){:target="_blank"} to build a landing page for a new restaurant in town.
 The owner of the restaurant has expressed that the sole goal for this site right now is to act as a basic landing page so people know they are open and begin to come by the restaurant.
 You job is to build a one page, static website for them. The CSS for the site will be provided.
 
