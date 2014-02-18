@@ -45,7 +45,7 @@ name entered above.
 ## Homework
 
 Complete assignments below by getting the tests to pass. Step one is to [fork](https://help.github.com/articles/fork-a-repo){:target="_blank"}
-the [starting repository](https://github.com/gschool/ruby_basics){:target="_blank"} into your account and clone the repository to your local machine
+the [starting repository](https://github.com/gSchool/ruby_basics){:target="_blank"} into your account and clone the repository to your local machine
 into the gSchool working folder. You should then run `bundle` and then `rspec spec` from the cloned directory to see all of the pending specs. If you want to run only the specs
 for a specific assignment, you can run `rspec spec/[spec_file_name]`. For example, to run only the Greetings specs from the demo, you would type `rspec spec/greetings_spec.rb`.
 
