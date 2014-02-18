@@ -14,13 +14,18 @@
 * Committing changes to local Git repository
 * Sharing changes with teammates via remote GitHub repository
 
-This tutorial will lead you through the steps of obtaining [source code](http://en.wikipedia.org/wiki/Source_code){:target="_blank"} for a [static web site](http://en.wikipedia.org/wiki/Static_web_page){:target="_blank"} from a remote [Git](http://git-scm.com/book/en/Getting-Started){:target="_blank"} repository by [cloning that repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}, making and confirming changes to that site and deploying that application to the Internet via a cloud based hosting platform for [web applications](http://en.wikipedia.org/wiki/Web_application){:target="_blank"} called [Heroku](https://www.heroku.com/){:target="_blank"}.
+This tutorial will lead you through the steps of obtaining [source code](http://en.wikipedia.org/wiki/Source_code){:target="_blank"} for
+a [static web site](http://en.wikipedia.org/wiki/Static_web_page){:target="_blank"} from a
+remote [Git](http://git-scm.com/book/en/Getting-Started){:target="_blank"}
+repository by [cloning that repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}, making
+and confirming changes to that site and deploying that application to the Internet via a cloud based hosting
+platform for [web applications](http://en.wikipedia.org/wiki/Web_application){:target="_blank"} called [Heroku](https://www.heroku.com/){:target="_blank"}.
 
 ##<a name="localEnvironment"></a>Get static site template running locally
 
 The first step is to make your own copy of the base Git repository, an act known
 as [forking a repository](https://help.github.com/articles/fork-a-repo){:target="_blank"}. The repository you are going to fork
-is found at [https://github.com/Galvanize-IT/restaurant_site](https://github.com/Galvanize-IT/restaurant_site){:target="_blank"}.
+is found at [https://github.com/gSchool/restaurant_site](https://github.com/gSchool/restaurant_site){:target="_blank"}.
 Navigate to the repository URL and use the fork button in the upper right hand corner to fork the repository
 to your GitHub account.
 

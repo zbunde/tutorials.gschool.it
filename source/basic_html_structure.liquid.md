@@ -26,7 +26,8 @@ You will be using the provided tests to help you drive out the development of th
 These tests follow the flow of the Tracker stories. The flow you will follow is to remove the `skip` marker from a test, see the test failing and then write only the code that you need to make it pass.
 This is the very beginnings of your exposure to [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development){:target="_blank"} (aka TDD).
 
-The testing library we are using is called [Miniest](https://github.com/seattlerb/minitest). The tests can be found in the /test directory in your local development environment. These tests can be run from the command line.
+The testing library we are using is called [Miniest](https://github.com/seattlerb/minitest). The tests can be found in the /test directory in your local development environment.
+These tests can be run from the command line.
 
 {% terminal %}
 $ rake test
