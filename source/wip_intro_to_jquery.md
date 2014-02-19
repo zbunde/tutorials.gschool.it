@@ -25,7 +25,7 @@ A student should be able to:
 * Javascript
 * jQuery
 
-## Demo (
+## [Demo](https://github.com/gSchool/jquery-demo){:target="_blank"}
 
 1. Selectors
 1. Appending new elements to the DOM

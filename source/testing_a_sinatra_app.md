@@ -55,7 +55,7 @@ A student should be able to:
 * English like [domain specific language (DSL)](http://en.wikipedia.org/wiki/Domain-specific_language){:target="_blank"}
     * Domain is interacting with a web site
 * Can be used to easily test apps running locally as well as remote apps.
-    * Show demo of testing external application (capybara_with_external_application repository)
+    * Show [demo of testing external application](https://github.com/gSchool/capybara_with_external_application){:target="_blank"}
 
 ## Continuous Integration
 
@@ -67,7 +67,7 @@ A student should be able to:
     * it integrates well with GitHub
     * it is free for open source projects
 
-## Demo (tested_http_basics_with_sinatra repository)
+## [Demo](https://github.com/gSchool/tested_http_basics_with_sinatra){:target="_blank"}
 * Fork and clone the repository
     * Get a volunteer to also clone the fork
 * Initialize RSpec

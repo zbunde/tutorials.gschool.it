@@ -82,7 +82,7 @@ Shall the new role be allowed to create more new roles? (y/n) y
 * [Updating data](http://www.postgresql.org/docs/9.3/static/dml-update.html){:target="_blank"}
 * [Deleting data](http://www.postgresql.org/docs/9.3/static/dml-delete.html){:target="_blank"}
 
-## Demo (intro_to_sql_demo repository)
+## [Demo](https://github.com/gSchool/intro_to_sql_demo){:target="_blank"}
 
 Implement SQL to hold the items from the object refactoring homework.
 

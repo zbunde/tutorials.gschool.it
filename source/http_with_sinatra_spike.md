@@ -42,7 +42,7 @@ A student should be able to:
     * The deliverable is the knowledge gained, not production code
     * Implementing production tests/code will now go faster because you understand problem
 
-## Demo
+## [Demo](https://github.com/gSchool/http_basics_with_sinatra_demo){:target="_blank"}
 
 * Implement an endpoint `/`, also known as the root of the site
     * Show how to use [rerun](https://github.com/alexch/rerun/){:target="_blank"} for automatic reloading of site after first commit. `gem install rerun` and `rerun 'ruby app.rb'`

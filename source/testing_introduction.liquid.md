@@ -97,7 +97,7 @@ The mechanics of test driven development (TDD)
 * Change to RSpec for a bit easier readability. [Commit](https://github.com/gSchool/testingDemo/commit/bcdb4878ea84df16729a56af36f98aad71e6cfcf){:target="_blank"}
     * Talk about dependencies, Bundler, RubyGems and semantic versioning
 
-## Implement together
+## [Implement together](https://github.com/gSchool/testingDemo){:target="_blank"}
 
 ### Fizz Buzz
 
