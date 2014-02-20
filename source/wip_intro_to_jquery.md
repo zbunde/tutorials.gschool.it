@@ -13,6 +13,10 @@ A student should be able to:
 * Properly initialize all jQuery based functionality when document is ready
 * Use Chrome Developer Tools console as a investigatory and logging tool
 * Use selectors to interact with [DOM](http://en.wikipedia.org/wiki/Document_Object_Model){:target="_blank"} elements
+    * adding to DOM
+    * changing element text
+    * adding classes
+    * setting attributes
 * Use jQuery events to make things happen when events occur
 * Understand jQuery effects
 * Use jQuery to make AJAX calls
@@ -33,7 +37,6 @@ A student should be able to:
 1. Changing text of an element
 1. Hiding box from the console
 1. Hiding box from a click with animations
-
 
 Steps to remember:
 1. Find the element
