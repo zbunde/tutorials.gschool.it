@@ -112,7 +112,7 @@ system:
 
 ## <a name="ruby21"></a>Install Ruby 2.1
 
-OS X Mavericks, the [operating system](http://en.wikipedia.org/wiki/Operating_system){:target="_blank"} for you Mac, comes with a version of Ruby installed but it is not the latest and greatest. We will use RVM to install the latest version of Ruby, 2.1. If prompted for a password, use the password you use to unlock your computer. While you are waiting for Ruby to compile, read about Ruby:
+OS X Mavericks, the [operating system](http://en.wikipedia.org/wiki/Operating_system){:target="_blank"} for your Mac, comes with a version of Ruby installed but it is not the latest and greatest. We will use RVM to install the latest version of Ruby, 2.1. If prompted for a password, use the password you use to unlock your computer. While you are waiting for Ruby to compile, read about Ruby:
 
 * https://www.ruby-lang.org/en/about/
 * http://en.wikipedia.org/wiki/Ruby_(programming_language)
