@@ -118,17 +118,17 @@ OS X Mavericks, the [operating system](http://en.wikipedia.org/wiki/Operating_sy
 * http://en.wikipedia.org/wiki/Ruby_(programming_language)
 
 {% terminal %}
-$ rvm install ruby-2.1.0
+$ rvm install ruby-2.1.1
 Searching for binary rubies, this might take some time.
-Found remote file https://rvm.io/binaries/osx/10.9/x86_64/ruby-2.1.0.tar.bz2
+Found remote file https://rvm.io/binaries/osx/10.9/x86_64/ruby-2.1.1.tar.bz2
 < lots of output >
 {% endterminal %}
 
-To confirm that Ruby 2.1.0 is installed correctly, ask for the version at the command line.
+To confirm that Ruby 2.1.1 is installed correctly, ask for the version at the command line.
 
 {% terminal %}
 $ ruby \--version
-ruby 2.1.0p0 (2013-12-25 revision 44422) [x86_64-darwin12.0]
+ruby 2.1.1p76 (2014-02-24 revision 45161) [x86_64-darwin13.0]
 {% endterminal %}
 
 ## <a name="bundler"></a>Install Bundler [RubyGem](http://en.wikipedia.org/wiki/RubyGems){:target="_blank"}
