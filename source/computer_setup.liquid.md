@@ -356,7 +356,7 @@ Delta compression using up to 2 threads.
 Compressing objects: 100% (13/13), done.
 Writing objects: 100% (16/16), 1.94 KiB | 0 bytes/s, done.
 Total 16 (delta 1), reused 16 (delta 1)
------> Ruby app detected
+\-----> Ruby app detected
 < lots of output >
 To git@heroku.com:afternoon-harbor-4586.git
  * [new branch]      master -> master
@@ -410,7 +410,7 @@ Delta compression using up to 2 threads.
 Compressing objects: 100% (13/13), done.
 Writing objects: 100% (16/16), 1.94 KiB | 0 bytes/s, done.
 Total 16 (delta 1), reused 16 (delta 1)
------> Ruby app detected
+\-----> Ruby app detected
 < lots of output >
 To git@heroku.com:afternoon-harbor-4586.git
  * [new branch]      master -> master
@@ -443,7 +443,7 @@ x exercism
 You can then confirm that the CLI is set up properly in your path.
 
 {% terminal %}
-$ exercism --version
+$ exercism \--version
 exercism version 1.3.2
 {% endterminal %}
 
