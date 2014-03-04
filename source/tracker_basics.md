@@ -97,7 +97,7 @@ work that you have during gSchool.
     * If you are working on something, there should be a Tracker story here for it.
 1. Invite instructors(kinsey@gschool.it, mike@gschool.it and jeff@gschool.it) as members of this Tracker project.
     * Instructors will be monitoring Tracker projects as a way to measure individual and class progress throughout the class.
-1. Import initial set of Tracker stories downloaded from [here](http://tutorials.gschool.it/trackerStories/initialStories.csv){:target="_blank"} into this project.
+1. Import initial set of Tracker stories downloaded from [here](http://students.gschool.it/trackerStories/initialStudentStories.csv){:target="_blank"} into this project.
 
 ## References
 
