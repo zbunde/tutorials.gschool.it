@@ -340,7 +340,7 @@ Receiving objects: 100% (16/16), done.
 Resolving deltas: 100% (1/1), done.
 Checking connectivity... done
 $ cd ruby-sample/
-Users-Mac:ruby-sample user$ heroku create
+$ heroku create
 Creating afternoon-harbor-4586... done, stack is cedar
 http://afternoon-harbor-4586.herokuapp.com/ | git@heroku.com:afternoon-harbor-4586.git
 Git remote heroku added
