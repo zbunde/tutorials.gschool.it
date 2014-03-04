@@ -289,8 +289,9 @@ gitignore.
 
 {% terminal %}
 $ echo '.idea/' > ~/.gitignore_global
-$ git config --global core.excludesfile ~/.gitignore_global
+$ git config \--global core.excludesfile ~/.gitignore_global
 {% endterminal %}
+
 
 ## <a name="sshKey"></a>Generate an SSH key
 
