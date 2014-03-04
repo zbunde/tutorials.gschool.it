@@ -366,7 +366,8 @@ Opening afternoon-harbor-4586... done
 
 If you get an error about mismatched Ruby versions, ignore it for now.
 
-When you see "Hello, world" in the newly opened browser window your Heroku installation is complete and working. You can delete the ruby-sample directory using `rm -rf`.
+When you see "Hello, world" in the newly opened browser window your Heroku installation is complete and working.
+You can delete the ruby-sample directory using `rm -rf`.
 
 ![Heroku setup complete](/images/computerSetup/herokuInstalled.png)
 
@@ -415,7 +416,12 @@ Opening afternoon-harbor-4586... done
 
 If you get an error about mismatched Ruby versions, ignore it for now.
 
-When you see "Hello, world" in the newly opened browser window your Heroku installation is complete and working. You can delete the ruby-sample directory using `rm -rf`.
+When you see "Hello, world" in the newly opened browser window your Heroku installation is complete and working.
+You can delete the ruby-sample directory using `rm -rf`.
+
+{% terminal %}
+$ rm -rf ~/gSchoolWork/ruby-sample
+{% endterminal %}
 
 ![Heroku setup complete](/images/computerSetup/herokuInstalled.png)
 
