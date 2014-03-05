@@ -211,7 +211,7 @@ command line instead of the GitHub Gui. Please complete the following two online
 prepared with any questions you have:
 
 * [http://try.github.io/](http://try.github.io/){:target="_blank"}
-* [http://gitimmersion.com/](http://try.github.io/){:target="_blank"}
+* [http://gitimmersion.com/](http://gitimmersion.com/){:target="_blank"}
 
 As you take your Git learning deeper, you can check out the [free online book](http://git-scm.com/book){:target="_blank"} for
 more information about Git and it's inner workings. The [Git Basics](http://git-scm.com/book/en/Git-Basics){:target="_blank"} section will cover a lot of what you did
