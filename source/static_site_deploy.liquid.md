@@ -131,7 +131,7 @@ Open your local working directory in RubyMine and find the public/index.html fil
 
 Now we need to tell Git what changes we would like to add to it's history of our codebase. We will use the GitHub Gui to do this.
 Open the GitHub Gui using Spotlight by holding command key and pressing the space bar. This will open the Spotlight search. You can then start typing GitHub.
-It shouyld show up and you can open it up by pressing the Enter/Return key when it is selected in Spotlight.
+It should show up and you can open it up by pressing the Enter/Return key when it is selected in Spotlight.
 
 ![Opening GitHubUi](/images/staticSiteDeploy/openGitHubGui.png)
 
@@ -157,7 +157,7 @@ Your commit should be at the top of the list.
 ![Commit](/images/staticSiteDeploy/commitDetails.png)
 
 Now that you have confirmed that your changes are indeed working, you should push your changes back up to GitHub.
-You can either use the Gui with the sync button or us the command line.
+You can either use the Gui with the sync button or use the command line.
 
 {% terminal %}
 $ git push origin master
