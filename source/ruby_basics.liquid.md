@@ -68,7 +68,7 @@ If you want to run only the specs for a specific assignment, you can run `rspec 
 For example, to run only the Greetings specs from the demo, you would type: 
 
 {% terminal %}
-rspec spec/greetings_spec.rb
+$ rspec spec/greetings_spec.rb
 {% endterminal %}
 
 You will see that all of the tests are pending to start.  Remove the "pending" from the test you are working on and re-run the spec to see the failure.
