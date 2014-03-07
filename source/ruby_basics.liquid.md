@@ -50,6 +50,11 @@ name entered above.
 1. Commit and push
 1. Finish the story
 
+## Tracking your work
+
+If you'd like to track your work, you can
+import the related Tracker stories downloaded from
+[here](http://students.gschool.it/trackerStories/rubyBasicsStories.csv){:target="_blank"} into your project.
 
 ## Homework
 
