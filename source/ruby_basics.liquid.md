@@ -86,10 +86,10 @@ For example, to run only the Greetings specs from the demo, you would type:
 $ rspec spec/greetings_spec.rb
 {% endterminal %}
 
-You assignment is to use each of the test files to complete the exercises below. Each exercise 
+Your assignment is to use each of the test files to complete the exercises below. Each exercise
 should be implemented in a file that is named after the title of the item using
 proper Ruby file naming conventions. For example, Guessing Game
-should be implemented in a file at the path `bin/guessing_game.rb`.  
+should be implemented in a file at the path `bin/guessing_game.rb`.
 
 So if you are working on the greetings exercise, your directory structure should look like this:
 
@@ -111,6 +111,12 @@ So if you are working on the greetings exercise, your directory structure should
     └── spec_helper.rb
     └── aruba
 {% endterminal %}
+
+You should also be using irb or running the file from the command line using `ruby bin/[filename]`
+to help you move forward if the tests are not helping you move forward.
+
+You can also add additional tests to the spec files if you would like to use them to help
+you write your program.
 
 If you get stuck on one, write as much code as you can then write out your logic using comments and
 short English phrases for any code that you do not know how to write.
