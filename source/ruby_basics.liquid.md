@@ -39,9 +39,17 @@ After this exercise, a student will be able to:
 
 Greetings
 
-1. The program asks a user for their name by printing the prompt "What is your name?".
-1. The program prints out the text "Hello [enteredName]!" where [enteredName] is replaced by the
+1. Import and prioritize the stories
+1. Fork and clone the repo
+1. Start the story
+1. Make the spec fail
+1. Write a program that asks a user for their name by printing the prompt "What is your name?".
+1. Make the program print out the text "Hello [enteredName]!" where [enteredName] is replaced by the
 name entered above.
+1. Run the spec
+1. Commit and push
+1. Finish the story
+
 
 ## Homework
 
