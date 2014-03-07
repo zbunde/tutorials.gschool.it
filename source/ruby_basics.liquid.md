@@ -35,6 +35,8 @@ After this exercise, a student will be able to:
     * [Learn to Program](http://pragprog.com/book/ltp2/learn-to-program){:target="_blank"} - not a complete reference but great for beginners. Suited for reading cover to cover.
     * [Pickaxe Book](http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0){:target="_blank"} - a pretty complete language reference book. Not meant for reading cover to cover.
 
+**Also see the LearninResources document in the Google Drive.**
+
 ## Demo
 
 Greetings
@@ -64,19 +66,25 @@ into the gSchool working folder. You should then run `bundle` and then `rspec sp
 
 {% terminal %}
 $ git clone git@github.com:yourname/ruby_basics.git
-$ cd git@github.com:yourname/ruby_basics.git
+$ cd ruby_basics
 $ bundle
 {% endterminal %}
 
-Now you are setup to start running tests.
-If you want to run only the specs for a specific assignment, you can run `rspec spec/[spec_file_name]`. 
+Now you are setup to start running tests using a library called [RSpec](https://github.com/rspec/rspec){:target="_blank"}.
+
+{% terminal %}
+$ rspec
+{% endterminal %}
+
+You will see that all of the tests are pending to start.
+Remove the "pending" from the test you are working on and re-run the spec to see the failure.
+
+If you want to run only the specs for a specific assignment, you can run `rspec spec/[spec_file_name]`.
 For example, to run only the Greetings specs from the demo, you would type: 
 
 {% terminal %}
 $ rspec spec/greetings_spec.rb
 {% endterminal %}
-
-You will see that all of the tests are pending to start.  Remove the "pending" from the test you are working on and re-run the spec to see the failure.
 
 You assignment is to use each of the test files to complete the exercises below. Each exercise 
 should be implemented in a file that is named after the title of the item using
@@ -102,11 +110,11 @@ So if you are working on the greetings exercise, your directory structure should
     ├── roman_numerals_spec.rb
     └── spec_helper.rb
     └── aruba
-
 {% endterminal %}
 
 If you get stuck on one, write as much code as you can then write out your logic using comments and
 short English phrases for any code that you do not know how to write.
 When you are done, push your code back up to GitHub for review.
 
-View the README for more information about specifics of each program you will write.
+View the [README](https://github.com/gSchool/ruby_basics/blob/master/README.md){:target="_blank"}
+for more information about specifics of each program you will write.
