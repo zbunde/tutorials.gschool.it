@@ -1,6 +1,7 @@
 # Ruby Basics
 
 ## Goals
+
 After this exercise, a student will be able to:
 
 * Run ruby files from the command line
@@ -46,22 +47,53 @@ name entered above.
 
 Complete assignments below by getting the tests to pass. Step one is to [fork](https://help.github.com/articles/fork-a-repo){:target="_blank"}
 the [starting repository](https://github.com/gSchool/ruby_basics){:target="_blank"} into your account and clone the repository to your local machine
-into the gSchool working folder. You should then run `bundle` and then `rspec spec` from the cloned directory to see all of the pending specs. If you want to run only the specs
-for a specific assignment, you can run `rspec spec/[spec_file_name]`. For example, to run only the Greetings specs from the demo, you would type `rspec spec/greetings_spec.rb`.
+into the gSchool working folder. You should then run `bundle` and then `rspec spec` from the cloned directory to see all of the pending specs.
 
-You assignment is to use each of the test files to complete the exercises below. Each exercise should be implemented in a file that is named after the title of the item using
+{% terminal %}
+$ git clone git@github.com:yourname/ruby_basics.git
+$ cd git@github.com:yourname/ruby_basics.git
+$ bundle
+{% endterminal %}
+
+Now you are setup to start running tests.
+If you want to run only the specs for a specific assignment, you can run `rspec spec/[spec_file_name]`. 
+For example, to run only the Greetings specs from the demo, you would type: 
+
+{% terminal %}
+rspec spec/greetings_spec.rb
+{% endterminal %}
+
+You will see that all of the tests are pending to start.  Remove the "pending" from the test you are working on and re-run the spec to see the failure.
+
+You assignment is to use each of the test files to complete the exercises below. Each exercise 
+should be implemented in a file that is named after the title of the item using
 proper Ruby file naming conventions. For example, Guessing Game
-should be implemented in a file called "guessing_game.rb".
+should be implemented in a file at the path `bin/guessing_game.rb`.  
+
+So if you are working on the greetings exercise, your directory structure should look like this:
+
+{% terminal %}
+.
+├── Gemfile
+├── Gemfile.lock
+├── LICENSE
+├── README.md
+├── bin
+│   ├── birthday_data.csv
+│   └── greetings.rb # <== you add this file
+└── spec
+    ├── beer_on_the_wall_spec.rb
+    ├── birthday_helper_spec.rb
+    ├── deaf_grandma_spec.rb
+    ├── greetings_spec.rb
+    ├── roman_numerals_spec.rb
+    └── spec_helper.rb
+    └── aruba
+
+{% endterminal %}
 
 If you get stuck on one, write as much code as you can then write out your logic using comments and
 short English phrases for any code that you do not know how to write.
 When you are done, push your code back up to GitHub for review.
 
-(Mike's notes in parens)
-
-1. Guessing Game (this one may be tricky because we have to stub random on the tests...let's look for 5 others to see if we need this one. Another option is to give them the code needed to get the random number to start with so we can stub it properly in the tests)
-    1. The program calculates a random number between 1 and 10 when it starts and stores it in a variable. (Figure out how to stub random in the tests.)
-    1. The program asks the user for a number by printing the prompt "Please enter a number:".
-    1. If that number is less than the random number, print out the string "Higher" and asks for another number
-    1. If that number is greater than the random number, print out the string "Lower" and asks for another number.
-    1. If that number is equal to the random number, print out "Congratulations!" and stop asking for numbers.
+View the README for more information about specifics of each program you will write.
