@@ -1,4 +1,4 @@
-# Ruby Basics
+# [Ruby](http://en.wikipedia.org/wiki/Ruby_(programming_language)){:target="_blank"} Basics
 
 ## Goals
 
