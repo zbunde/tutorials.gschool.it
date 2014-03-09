@@ -35,7 +35,7 @@ After this exercise, a student will be able to:
     * [Learn to Program](http://pragprog.com/book/ltp2/learn-to-program){:target="_blank"} - not a complete reference but great for beginners. Suited for reading cover to cover.
     * [Pickaxe Book](http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0){:target="_blank"} - a pretty complete language reference book. Not meant for reading cover to cover.
 
-**Also see the LearninResources document in the Google Drive.**
+**Also see the Learning Resources document in the Google Drive.**
 
 ## Demo
 
