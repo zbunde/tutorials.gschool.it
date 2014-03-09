@@ -15,7 +15,7 @@
 * [HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"}
 
 This tutorial will lead you through building a basic structure for an [HTML5](http://www.w3.org/TR/html5/introduction.html#introduction) web page.
-In this tutorial, you will build build on the static website you used in the [previous tutorial](/static_site_deploy){:target="_blank"} to build a landing page for a new restaurant in town.
+In this tutorial, you will build on the static website you used in the [previous tutorial](/static_site_deploy){:target="_blank"} to build a landing page for a new restaurant in town.
 The owner of the restaurant has expressed that the sole goal for this site right now is to act as a basic landing page so people know they are open and begin to come by the restaurant.
 You job is to build a one page, static website for them. The CSS for the site will be provided.
 
@@ -137,7 +137,7 @@ $rake test
  You have skipped tests. Run with --verbose for details.
 {% endterminal %}
 
-Congratutaions, you have made your first test pass!
+Congratulations, you have made your first test pass!
 
 You should also take a look at your work in the browser to make sure the [end user](http://en.wikipedia.org/wiki/User_(computing)#End_user){:target="_blank"}
 will have the correct results since we have only relied on the tests to determine if we are done. The reason we check in the browser as well is to make sure our tests match up with the real world. If the test ended
@@ -215,7 +215,7 @@ Total 132 (delta 50), reused 0 (delta 0)
        http://fast-falls-6618.herokuapp.com deployed to Heroku
 {% endterminal %}
 
-You can then open the stating environment and make sure everything looks good.
+You can then open the staging environment and make sure everything looks good.
 
 {% terminal %}
 $ heroku open
