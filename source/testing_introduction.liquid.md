@@ -1,12 +1,12 @@
 # Starting down the road to Test Driven Development
 
-Source code for in class work can be found [here](https://github.com/gSchool/testingDemo){:target="_blank"}.
-
 ## Goal
 At the end of this demo, the student should be able to:
 
 * understand why automated testing is important
-* translate english language requirements into test cases for small classes. We will build on this skill throughout class as we build bigger systems and discuss testing at different levels.
+* translate english language requirements into test cases for small classes.
+We will build on this skill throughout class as we build bigger systems and
+discuss testing at different levels.
 * explain the three parts of the TDD cycle
 * identify the different parts of a test
     * setup
@@ -14,7 +14,7 @@ At the end of this demo, the student should be able to:
     * assertion of results
     * teardown
 * understand Minitest::Test and RSpec syntax
-* unerstand what a [dependency](http://en.wikipedia.org/wiki/Coupling_(computer_programming)){:target="_blank"} is
+* understand what a [dependency](http://en.wikipedia.org/wiki/Coupling_(computer_programming)){:target="_blank"} is
 * have a basic understanding of semantic versioning
 * understand the roles that [Bundler](http://bundler.io/){:target="_blank"} and [RubyGems](http://rubygems.org/){:target="_blank"} play in the Ruby ecosystem
 
@@ -74,30 +74,32 @@ Supporting existing code:
 * Make sure the new code works as well
 * Repeat
 
+** Demonstrate using IRB **
+
 ### Automated Testing
 
 The mechanics of test driven development (TDD)
 
 * **Red** - Write a failing test
-* **Green** - Make is pass using the simplest code possible
+* **Green** - Make is pass using the simplest code possible as quickly as possible
 * **Refactor** - Clean up any messes
 
 **Thats it!**
 
-* Test code in one file, production code in another file. [Commit](https://github.com/gSchool/testingDemo/commit/6bf39f5744a2904aa4441e18af1effee6618ba31){:target="_blank"}
-* Write a test that fails for the correct reason. [Commit](https://github.com/gSchool/testingDemo/commit/129ca394e8f1a273d6618d61e42619eed5923132){:target="_blank"}
-* Tests should cover all of the possible cases. [Commit](https://github.com/gSchool/testingDemo/commit/78aef5556e779db58eac860f3a13b7d3b5a00a5a){:target="_blank"}, [Commit](https://github.com/gSchool/testingDemo/commit/f687310a9ccf84bbec98bed9d8e50ec5ef6d5667){:target="_blank"}
-* Requirements change. [Commit](https://github.com/gSchool/testingDemo/commit/1c60dad327324b2715dee140cb341f2ba7efae20){:target="_blank"}
-* Refactor to clean up duplication in tests. [Commit](https://github.com/gSchool/testingDemo/commit/660c5fe2d3f6b53cbae9d1434bc95eeeaf20a28c){:target="_blank"}
-* Use a common setup to eliminate more code. [Commit](https://github.com/gSchool/testingDemo/commit/020f1278a9ab807bae8c923a608d5e55c4f0d06c){:target="_blank"}
-* Use a library (Minitest::Test) to eliminate even more code. [Commit](https://github.com/gSchool/testingDemo/commit/d08995ed651109fee79699424b1345884eb1ab37){:target="_blank"}
-* assert vs assert_equal [Commit](https://github.com/gSchool/testingDemo/commit/a2cc25a6e10f7e0d802bebe0937c1feed0eaef12){:target="_blank"}
-* Simplify as much as you can. [Commit](https://github.com/gSchool/testingDemo/commit/1c5b65a78c79f96fc6a12acb60ca486cd51e9a66){:target="_blank"}
-* Simplification is for long term understandability, not character preservation. [Commit](https://github.com/gSchool/testingDemo/commit/7cbc4aee380f07653b06bf9e02ecb407e13c3832){:target="_blank"}
-* Change to RSpec for a bit easier readability. [Commit](https://github.com/gSchool/testingDemo/commit/bcdb4878ea84df16729a56af36f98aad71e6cfcf){:target="_blank"}
+* Test code in one file, production code in another file.
+* Write a test that fails for the correct reason.
+* Tests should cover all of the possible cases for `is_cool?`.
+* Requirements change and now blue bikes are cool.
+* Refactor to clean up duplication in tests by extracting assert_equal.
+* Use a common setup to eliminate more code.
+* Use a library (Minitest::Test) to eliminate even more code.
+* assert vs assert_equal
+* Simplify as much as you can by using refute.
+* Simplification is for long term understandability, not character preservation.
+* Change to RSpec for a bit easier readability.
     * Talk about dependencies, Bundler, RubyGems and semantic versioning
 
-## [Implement together](https://github.com/gSchool/testingDemo){:target="_blank"}
+## Implement together
 
 ### Fizz Buzz
 
@@ -125,20 +127,27 @@ Why don't we just use a Hash to implement this code?
 
 Complete all exercises using good TDD style, as demonstrated in class, and RSpec.
 
-You should [create a local Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
-with one sub-directory for each of the exercises. You should also push this code to
-GitHub in a [newly created repository](https://help.github.com/articles/creating-a-new-repository){:target="_blank"} called
-"intro_to_tdd".
-
 Please work in groups of 4 and help others along as you go.
 
 Each person will write their own versions with their own GitHub repository but you should use the group for help.
 
-First, make sure that you have RSpec installed.
+Your first step is to [create a local Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
+named "intro_to_tdd". You will push this code to
+GitHub in a [newly created repository](https://help.github.com/articles/creating-a-new-repository){:target="_blank"} called
+"intro_to_tdd".
+
+Next, initialize your bundle using bundler so you get a Gemfile.
 
 {% terminal %}
-$ gem install rspec
+$ bundle init
 {% endterminal %}
+
+Finally, add the latest released version of RSpec as per RubyGems.org. Make sure you specify a version specifier.
+
+You will then implement tests for the two exercises (Fizz Buzz and key/value store) above and
+all of the below exercises. Your tests will reside in a spec directory
+and your Ruby files will live in a lib directory. Both are subdirectories of the intro_to_tdd
+directory.
 
 1. odd/even
     * The class will return the numbers starting with 1 and ending with the number that it was initialized with when the run method is called.
