@@ -74,7 +74,7 @@ Supporting existing code:
 * Make sure the new code works as well
 * Repeat
 
-** Demonstrate using IRB **
+*Demonstrate using IRB*
 
 ### Automated Testing
 
