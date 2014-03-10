@@ -133,9 +133,18 @@ Please work in groups of 4 and help others along as you go.
 Each person will write their own versions with their own GitHub repository but you should use the group for help.
 
 Your first step is to [create a local Git repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository){:target="_blank"}
-named "intro_to_tdd". You will push this code to
-GitHub in a [newly created repository](https://help.github.com/articles/creating-a-new-repository){:target="_blank"} called
-"intro_to_tdd".
+named "intro_to_tdd".
+
+{% terminal %}
+$ cd ~/gSchoolWork
+$ mkdir intro_to_tdd
+$ cd intro_to_tdd
+$ git init
+{% endterminal %}
+
+You will push this code to GitHub in a
+[newly created repository](https://help.github.com/articles/creating-a-new-repository){:target="_blank"}
+called "intro_to_tdd".
 
 Next, initialize your bundle using bundler so you get a Gemfile.
 
