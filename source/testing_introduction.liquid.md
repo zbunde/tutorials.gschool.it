@@ -3,6 +3,9 @@
 ## Goal
 At the end of this demo, the student should be able to:
 
+* know what the [Ruby $LOAD_PATH](http://ruby-doc.org/core-2.1.1/doc/globals_rdoc.html){:target="_blank"} is
+* understand what [`require`](http://www.ruby-doc.org/core-2.1.1/Kernel.html#method-i-require){:target="_blank"} does
+* understand the difference between `require` and [`load`](http://www.ruby-doc.org/core-2.1.1/Kernel.html#method-i-load){:target="_blank"}
 * understand why automated testing is important
 * translate english language requirements into test cases for small classes.
 We will build on this skill throughout class as we build bigger systems and
@@ -58,7 +61,7 @@ Implement a bike class that can perform the following:
 * User can ask if the bike is cool. Only red bikes are cool.
 
 ### Manual Testing
-What does the flow look like without tests?
+What does the flow look like without tests? *Demonstrate using IRB*
 
 When writing new code:
 
@@ -73,8 +76,6 @@ Supporting existing code:
 * Make sure it still does what it used to do
 * Make sure the new code works as well
 * Repeat
-
-*Demonstrate using IRB*
 
 ### Automated Testing
 
